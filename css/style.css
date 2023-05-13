@@ -39,7 +39,7 @@ a {
     font-family: var(--FuentePrincipal);
     color: var(--BaseColor);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 24px;
 }
 
@@ -109,31 +109,29 @@ h1 {
 
 .platos img{
     border-radius: 15px;
+    padding-left:7px;
 }
 
 .extra{
+    display: grid;
+    grid-template-columns: 50% 50%;
     padding: 20px;
 }
 
-.extra div{
-   display: flex; 
-   /* grid-template-columns:1fr 1fr ;
-   grid-template-rows: 1fr; */
-}
-
 .icon1 h3{
+    text-decoration: underline;
     font-size: 30px;
     font-weight: 800;
 }
 
-.extra .icon1::before{
+/* .extra .icon1::before{
     content: url(../img/infoicon.png);
-    padding-top: 20px;
+    padding-top: 26px;
     padding-right: 10px;
-}
+} */
 
 .icon2{
-    flex-direction: column;
     font-weight: 800;
     font-size: 20px;
+    line-height: 1.2px;
 }
