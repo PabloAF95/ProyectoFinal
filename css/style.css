@@ -1,0 +1,139 @@
+:root {
+    --BaseColor: darkgoldenrod;
+    --FuentePrincipal: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: rgba(181, 181, 181, 0.364);
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contenedorancho{
+    width: 78%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.divhorizontal{
+border: 1px solid rgb(130, 130, 130);
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    font-family: var(--FuentePrincipal);
+    color: var(--BaseColor);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: rgb(221, 200, 41);
+    background-color: rgba(99, 95, 95, 0.833);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+h1 {
+    color: rgb(19, 60, 156);
+    font-family: var(--FuentePrincipal);
+    font-size: 69px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 4px 2px 8px rgba(0,0,0,0.68);
+}
+
+.cabesa {
+    background-image: url(../img/CasaObduliaInterior.jpg);
+    background-size: cover;
+    background-repeat: none;
+    padding: 400px 200px;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+}
+
+.info div {
+    flex: 50%;
+    max-width: 50%;
+    flex-direction: column;
+    padding-right: 2px;
+    padding-left: 6px;
+    margin: 5px 5px;
+}
+
+.textinfo {
+    background: rgba(242, 246, 248, 1);
+    background: -moz-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(242, 246, 248, 1)), color-stop(5%, rgba(242, 246, 248, 1)), color-stop(42%, rgba(216, 225, 231, 1)), color-stop(73%, rgba(181, 198, 208, 1)), color-stop(100%, rgba(224, 239, 249, 1)));
+    background: -webkit-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
+    background: -o-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
+    background: linear-gradient(to bottom, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0);
+    font-size: 22px;
+    font-family: var(--FuentePrincipal);
+    border-radius: 20px;
+    font-weight: 500;
+    line-height: 1;
+    color: rgb(27, 44, 88);
+}
+
+.infoto {
+    background-color: darkgoldenrod;
+    background-image: url(../img/FotoPlato1.png);
+    background-size: cover;
+    background-repeat: none;
+    padding-bottom: 400px;
+    border-radius: 20px;
+}
+
+.platos img{
+    border-radius: 15px;
+}
+
+.extra{
+    padding: 20px;
+}
+
+.extra div{
+   display: flex; 
+   /* grid-template-columns:1fr 1fr ;
+   grid-template-rows: 1fr; */
+}
+
+.icon1 h3{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.extra .icon1::before{
+    content: url(../img/infoicon.png);
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.icon2{
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 20px;
+}
