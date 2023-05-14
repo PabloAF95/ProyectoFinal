@@ -3,6 +3,7 @@
     --FuentePrincipal: Arial, Helvetica, sans-serif;
 }
 
+/* ESTILOS BASICOS DE LA PAGINA */
 html {
     background-color: rgba(181, 181, 181, 0.364);
     box-sizing: border-box;
@@ -24,16 +25,18 @@ border: 1px solid rgb(130, 130, 130);
 }
 
 *, *::after, *::before{
-    box-sizing: inherit;
+    box-sizing:inherit;
 }
 
 body {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
 }
+
+/* ESTILOS NAVBAR */
 
 .navbar {
     font-family: var(--FuentePrincipal);
@@ -51,13 +54,15 @@ a {
     border-radius: 8px;
 }
 
+/* ESTILOS INFO */
+
 h1 {
-    color: rgb(19, 60, 156);
-    font-family: var(--FuentePrincipal);
-    font-size: 69px;
-    font-weight: 800;
+    color: rgb(68, 113, 218);
+    font-family: Pacifico;
+    font-size: 82px;
+    font-weight: 700;
     text-align: center;
-    text-shadow: 4px 2px 8px rgba(0,0,0,0.68);
+    text-shadow: 4px 4px 8px rgba(20, 20, 119, 0.298);
 }
 
 .cabesa {
@@ -107,10 +112,14 @@ h1 {
     border-radius: 20px;
 }
 
+/* ESTILOS SECCION IMAGENES (PLATOS) */
+
 .platos img{
     border-radius: 15px;
     padding-left:7px;
 }
+
+/* ESTILOS SECCION EXTRA */
 
 .extra{
     display: grid;
@@ -118,19 +127,23 @@ h1 {
     padding: 20px;
 }
 
-.icon1 h3{
+.exizq h3{
     text-decoration: underline;
     font-size: 30px;
     font-weight: 800;
 }
 
-/* .extra .icon1::before{
+.extra h3::before{
     content: url(../img/infoicon.png);
-    padding-top: 26px;
+    padding-top: 40px;
     padding-right: 10px;
-} */
+    margin-top: 10px;
+}
+.exizq p{
+    padding-left: 50px;
+}
 
-.icon2{
+.exder{
     font-weight: 800;
     font-size: 20px;
     line-height: 1.2px;
