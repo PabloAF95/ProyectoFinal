@@ -37,7 +37,7 @@ a {
 
 /* NAV CON .DROPDOWN Y .DROPDOW-CONTENT 
 SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
-!FALLO: NO SE VEN LAS LETRAS DEL DESPLEGABLE POR CULPA DE LA IMAGEN */
+** FALLO ** -> NO SE VEN LAS LETRAS DEL DESPLEGABLE POR CULPA DE LA IMAGEN */
 /* nav{
     padding: 20px;
 }
@@ -142,7 +142,6 @@ h1 {
     font-family: var(--FuentePrincipal);
     border-radius: 20px;
     font-weight: 500;
-    line-height: 1;
     color: rgb(27, 44, 88);
 }
 
@@ -182,13 +181,7 @@ h1 {
     margin-top: 10px;
 }
 
-.exizq p{
-    font-size: 20px;
-    padding-left: 50px;
-    font-weight: 400;
-}
-
-.exder p{
+.extra p{
     font-size: 20px;
     padding-left: 50px;
     font-weight: 400;
@@ -196,16 +189,16 @@ h1 {
 
 /* SECCION SOCIAL / FOOTER */
 
-.social{
+footer{
     display: grid;
     grid-template-columns: 50% 50% ;
 }
 
 .insta{
     padding-top: 10px;
-    padding-left: 120px;
+    padding-left: 320px;
 }
 
 .facebook{
-    padding-left: 120px;
+   padding-top: 8px;
 }
