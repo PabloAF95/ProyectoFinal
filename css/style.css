@@ -193,3 +193,10 @@ h1 {
     padding-left: 50px;
     font-weight: 400;
 }
+
+/* SECCION SOCIAL / FOOTER */
+
+.social{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
