@@ -96,6 +96,7 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     color:white;
     background-color: var(--BaseColor);
 }
+
 /* ESTILOS HEADER (CABESA) */
 .cabesa {
     background-image: url(../img/CasaObduliaInterior.jpg);
@@ -105,17 +106,37 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     border-radius: 10px;
 }
 
-/* ESTILOS INFO */
+.cabesaContacto{
+    background-image: url(../img/FachadaCasaObdulia.jpg);
+    background-size: cover;
+    background-repeat: none;
+    padding: 400px 200px;
+    border-radius: 10px;
+}
 
+/* ESTILOS DE ENCABEZADOS ( H1 a H6 ) */
 h1 {
     color: rgb(36, 81, 187);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 65px;
+    font-size: 80px;
     font-weight: 800;
     text-align: center;
     text-shadow: 4px 4px 8px rgba(6, 6, 114, 0.479);
 }
 
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    background-color: rgb(0, 9, 101);
+    color: rgb(54, 158, 219);
+    border-radius:20px ;
+    border-width: fit-content;
+    margin-bottom: 20px;
+}
+
+/* ESTILOS INFO */
 .info {
     display: flex;
 }
@@ -154,14 +175,12 @@ h1 {
 }
 
 /* ESTILOS SECCION IMAGENES (PLATOS) */
-
 .platos img{
     border-radius: 15px;
     padding-left:7px;
 }
 
 /* ESTILOS SECCION EXTRA */
-
 .extra{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -188,7 +207,6 @@ h1 {
 }
 
 /* SECCION SOCIAL / FOOTER */
-
 footer{
     display: grid;
     grid-template-columns: 50% 50% ;
