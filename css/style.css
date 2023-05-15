@@ -96,6 +96,14 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     color:white;
     background-color: var(--BaseColor);
 }
+/* ESTILOS HEADER (CABESA) */
+.cabesa {
+    background-image: url(../img/CasaObduliaInterior.jpg);
+    background-size: cover;
+    background-repeat: none;
+    padding: 400px 200px;
+    border-radius: 10px;
+}
 
 /* ESTILOS INFO */
 
@@ -106,14 +114,6 @@ h1 {
     font-weight: 800;
     text-align: center;
     text-shadow: 4px 4px 8px rgba(6, 6, 114, 0.479);
-}
-
-.cabesa {
-    background-image: url(../img/CasaObduliaInterior.jpg);
-    background-size: cover;
-    background-repeat: none;
-    padding: 400px 200px;
-    border-radius: 10px;
 }
 
 .info {
