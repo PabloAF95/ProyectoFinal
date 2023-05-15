@@ -198,5 +198,14 @@ h1 {
 
 .social{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50% ;
+}
+
+.insta{
+    padding-top: 10px;
+    padding-left: 120px;
+}
+
+.facebook{
+    padding-left: 120px;
 }
