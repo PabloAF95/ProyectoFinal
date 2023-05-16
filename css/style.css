@@ -58,7 +58,7 @@ a {
 }
 
 @media(max-width:468px){
-    .contenedorancho
+    /* .contenedorancho{} */
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -287,12 +287,15 @@ h5 {
             max-width: 80%;
             display: block;
         }
-    }
-
-        .platos img{
+    .platos img{
             padding-left: 0px;
             border-radius: 15px;
-        }
+        }     
+        
+
+ 
+    }
+
 
 /* ------------------------------------------------------------------------ */
 
