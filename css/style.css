@@ -3,6 +3,8 @@
     --FuentePrincipal: Arial, Helvetica, sans-serif;
 }
 
+/* las medida-quertys genericas son: 1140px en PC, 768px en tablet y 480px para moviles */
+
 /* ESTILOS BASICOS DE LA PAGINA */
 
 html {
@@ -15,23 +17,51 @@ html {
     margin: 0 auto;
 }
 
-.contenedorancho{
+.contenedorancho {
     width: 78%;
     margin: 20px auto;
     border-radius: 10px;
 }
 
-.divhorizontal{
-border: 1px solid rgb(130, 130, 130);
+.divhorizontal {
+    border: 1px solid rgb(130, 130, 130);
 }
 
-*, *::after, *::before{
-    box-sizing:inherit;
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
 }
 
 a {
     text-decoration: none;
 }
+
+/*---------------------------------------------------------------------------------
+    @MEDIA estilos BASICOS de la pagina*/
+
+@media(max-width:1140px) {
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:768px) {
+    .contenedor {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .divhorizontal{
+        max-width: 90%;
+    }
+}
+
+@media(max-width:468px){
+    .contenedorancho
+}
+
+/* ------------------------------------------------------------------------------ */
 
 /* ESTILOS NAVBAR */
 
@@ -71,7 +101,7 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     background-color: #1e378a;
   } */
 
-/*------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------*/
 
 /* NAV CON BOTONES BASICOS (FUNCIONAL)
     USA LA CLASE NAVBAR */
@@ -92,10 +122,16 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     border-radius: 8px;
 }
 
-.navbar a:hover{
-    color:white;
+.navbar a:hover {
+    color: white;
     background-color: var(--BaseColor);
 }
+
+/* ------------------------------------------------------------------------------
+    @MEDIA estilos NAVBAR */
+
+/* ------------------------------------------------------------------------------ */
+
 
 /* ESTILOS HEADER (CABESA) */
 .cabesa {
@@ -106,13 +142,25 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     border-radius: 10px;
 }
 
-.cabesaContacto{
+.cabesaContacto {
     background-image: url(../img/FachadaCasaObdulia.jpg);
     background-size: cover;
     background-repeat: none;
     padding: 400px 200px;
     border-radius: 10px;
 }
+
+/* ----------------------------------------------------------------------------
+    @MEDIA estilos HEADER / CABESA */
+
+@media (max-width:768px) {
+    .cabesa {
+        padding: 280px 120px;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+
 
 /* ESTILOS DE ENCABEZADOS ( H1 a H6 ) */
 h1 {
@@ -124,17 +172,32 @@ h1 {
     text-shadow: 4px 4px 8px rgba(6, 6, 114, 0.479);
 }
 
-h5{
+h5 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
     background-color: rgb(0, 9, 101);
     color: rgb(54, 158, 219);
-    border-radius:20px ;
+    border-radius: 20px;
     border-width: fit-content;
-    
+
 }
+
+/* ---------------------------------------------------------------------------
+    @MEDIA Estilos de ENCABEZADOS */
+
+@media(max-width:768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
+/*--------------------------------------------------------------------------  */
 
 /* ESTILOS INFO */
 .info {
@@ -175,7 +238,7 @@ h5{
     border-radius: 20px;
 }
 
-.confoto{
+.confoto {
     background-image: url(../img/FotoPlato5.png);
     background-size: cover;
     background-repeat: none;
@@ -183,59 +246,103 @@ h5{
     border-radius: 20px;
 }
 
-/* ESTILOS SECCION IMAGENES (PLATOS) */
-.platos img{
-    border-radius: 15px;
-    padding-left:7px;
+/* ---------------------------------------------------------------------------
+    @MEDIA Estilos INFO */
+
+@media(max-width:768px) {
+    .info {
+        display: block;
+        padding: 10px;
+        margin: 50px;
+    }
+
+    .info div {
+        max-width: 80%;
+    }
 }
 
+@media(max-width:480px) {
+    .info{
+        margin:0px;
+    }
+    .info div{
+        max-width: 100%;
+    }
+}
+
+/*-------------------------------------------------------------------------  */
+
+/* ESTILOS SECCION IMAGENES (PLATOS) */
+.platos img {
+    border-radius: 15px;
+    padding-left: 7px;
+}
+
+/* -------------------------------------------------------------------------
+    @MEDIA Estilos seccion IMAGENES / PLATOS */
+
+    @media(max-width:768px){
+        .platos{ 
+            justify-items: center;
+            max-width: 80%;
+            display: block;
+        }
+    }
+
+        .platos img{
+            padding-left: 0px;
+            border-radius: 15px;
+        }
+
+/* ------------------------------------------------------------------------ */
+
 /* ESTILOS SECCION EXTRA */
-.extra{
+.extra {
     display: grid;
     grid-template-columns: 50% 50%;
     padding: 20px;
 }
 
-.extra h3{
+.extra h3 {
     text-decoration: underline;
     font-size: 30px;
     font-weight: 800;
 }
 
-.extra h3::before{
+.extra h3::before {
     content: url(../img/infoicon.png);
     padding-top: 40px;
     padding-right: 10px;
     margin-top: 10px;
 }
 
-.extra p{
+.extra p {
     font-size: 20px;
     padding-left: 50px;
     font-weight: 400;
 }
 
 /* SECCION SOCIAL / FOOTER */
-.infoot{
+.infoot {
     display: grid;
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 50% 50%;
 }
 
-.insta{
+.insta {
     padding-top: 10px;
     padding-left: 320px;
 }
 
-.facebook{
-   padding-top: 8px;
+.facebook {
+    padding-top: 8px;
 }
 
-footer h2{
+footer h2 {
     text-align: center;
     font-size: 36px;
 }
 
-.kunfoot div{
+.kunfoot div {
     display: flex;
     justify-content: space-around;
 }
