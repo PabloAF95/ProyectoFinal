@@ -133,11 +133,12 @@ h5{
     color: rgb(54, 158, 219);
     border-radius:20px ;
     border-width: fit-content;
-    margin-bottom: 20px;
+    
 }
 
 /* ESTILOS INFO */
 .info {
+    margin-top: 20px;
     display: flex;
 }
 
@@ -215,7 +216,7 @@ h5{
 }
 
 /* SECCION SOCIAL / FOOTER */
-footer{
+.infoot{
     display: grid;
     grid-template-columns: 50% 50% ;
 }
@@ -227,4 +228,14 @@ footer{
 
 .facebook{
    padding-top: 8px;
+}
+
+footer h2{
+    text-align: center;
+    font-size: 36px;
+}
+
+.kunfoot div{
+    display: flex;
+    justify-content: space-around;
 }
