@@ -279,8 +279,9 @@ h5 {
 @media(max-width:768px) {
     .platos {
         display: block;
-        padding: 10px;
-        margin: 20px;
+        padding-left: 25px;
+        margin: 50px;
+        justify-content: center;
     }
 
     .platos div {
@@ -340,13 +341,14 @@ h5 {
         display: none;
     }
     .extra p{
-        padding-left: 24px;
+        padding-left: 25px;
     }
 }
 
 @media(max-width:480px) {
     .extra p {
         text-align: center;
+        padding-left: 10px;
     }
 }
 
@@ -381,13 +383,15 @@ footer h2 {
 
 /* ------------------------------------------------------------------------------------------------
     @MEDIA SECCION SOCIAL  */
-    
+
     @media(max-width:768px){
+        
         .insta{
             padding-left: 180px;
         }
     }
     @media(max-width:480px){
+
         .insta{
             padding-left: 40px;
         }
