@@ -3,7 +3,7 @@
     --FuentePrincipal: Arial, Helvetica, sans-serif;
 }
 
-/* las medida-quertys genericas son: 1140px en PC, 768px en tablet y 480px para moviles */
+/* las medida-quertys genericas (tamaño de pagina) son: 1140px en PC, 768px en tablet y 480px para moviles */
 
 /* ESTILOS BASICOS DE LA PAGINA */
 
@@ -38,7 +38,7 @@ a {
 }
 
 /*---------------------------------------------------------------------------------
-    @MEDIA estilos BASICOS de la pagina*/
+    @MEDIA ESTILOS BASICOS de la pagina*/
 
 @media(max-width:1140px) {
     .contenedor {
@@ -52,13 +52,10 @@ a {
         width: 100%;
         margin: 0 auto;
     }
-    .divhorizontal{
+
+    .divhorizontal {
         max-width: 90%;
     }
-}
-
-@media(max-width:468px){
-    /* .contenedorancho{} */
 }
 
 /* ------------------------------------------------------------------------------ */
@@ -128,10 +125,9 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
 }
 
 /* ------------------------------------------------------------------------------
-    @MEDIA estilos NAVBAR */
+    @MEDIA ESTILOS NAVBAR */
 
 /* ------------------------------------------------------------------------------ */
-
 
 /* ESTILOS HEADER (CABESA) */
 .cabesa {
@@ -151,16 +147,15 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
 }
 
 /* ----------------------------------------------------------------------------
-    @MEDIA estilos HEADER / CABESA */
+    @MEDIA ESTILOS HEADER / CABESA */
 
 @media (max-width:768px) {
     .cabesa {
-        padding: 280px 120px;
+        padding: 200px 120px;
     }
 }
 
 /* --------------------------------------------------------------------------- */
-
 
 /* ESTILOS DE ENCABEZADOS ( H1 a H6 ) */
 h1 {
@@ -185,7 +180,7 @@ h5 {
 }
 
 /* ---------------------------------------------------------------------------
-    @MEDIA Estilos de ENCABEZADOS */
+    @MEDIA ESTILOS DE ENCABEZADOS */
 
 @media(max-width:768px) {
     h1 {
@@ -247,25 +242,26 @@ h5 {
 }
 
 /* ---------------------------------------------------------------------------
-    @MEDIA Estilos INFO */
+    @MEDIA ESTILOS INFO */
 
 @media(max-width:768px) {
     .info {
         display: block;
         padding: 10px;
-        margin: 50px;
+        margin: 20px;
     }
 
     .info div {
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 
 @media(max-width:480px) {
-    .info{
-        margin:0px;
+    .info {
+        margin: 0px;
     }
-    .info div{
+
+    .info div {
         max-width: 100%;
     }
 }
@@ -275,27 +271,33 @@ h5 {
 /* ESTILOS SECCION IMAGENES (PLATOS) */
 .platos img {
     border-radius: 15px;
-    padding-left: 7px;
 }
 
 /* -------------------------------------------------------------------------
-    @MEDIA Estilos seccion IMAGENES / PLATOS */
+    @MEDIA ESTILOS SECCION IMAGENES / PLATOS */
 
-    @media(max-width:768px){
-        .platos{ 
-            justify-items: center;
-            max-width: 80%;
-            display: block;
-        }
-    .platos img{
-            padding-left: 0px;
-            border-radius: 15px;
-        }     
-        
-
- 
+@media(max-width:768px) {
+    .platos {
+        display: block;
+        padding: 10px;
+        margin: 20px;
     }
 
+    .platos div {
+        max-width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    .platos {
+        margin: 0px;
+
+    }
+
+    .platos div {
+        max-width: 100%;
+    }
+}
 
 /* ------------------------------------------------------------------------ */
 
@@ -325,6 +327,32 @@ h5 {
     font-weight: 400;
 }
 
+/* -----------------------------------------------------------------------------------
+    @MEDIA  SECCION EXTRA */
+
+@media(max-width:768px) {
+    .extra h3 {
+        text-align: center;
+        display: block;
+    }
+
+    .extra h3::before {
+        display: none;
+    }
+    .extra p{
+        padding-left: 24px;
+    }
+}
+
+@media(max-width:480px) {
+    .extra p {
+        text-align: center;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------  */
+
 /* SECCION SOCIAL / FOOTER */
 .infoot {
     display: grid;
@@ -333,11 +361,12 @@ h5 {
 
 .insta {
     padding-top: 10px;
-    padding-left: 320px;
+    padding-left: 100px;
 }
 
 .facebook {
     padding-top: 8px;
+    padding-left: 100px
 }
 
 footer h2 {
@@ -349,3 +378,21 @@ footer h2 {
     display: flex;
     justify-content: space-around;
 }
+
+/* ------------------------------------------------------------------------------------------------
+    @MEDIA SECCION SOCIAL  */
+    
+    @media(max-width:768px){
+        .insta{
+            padding-left: 180px;
+        }
+    }
+    @media(max-width:480px){
+        .insta{
+            padding-left: 40px;
+        }
+        .facebook {
+            padding-left: 32px
+        }
+    }
+/*---------------------------------------------------------------------------------------------------  */
