@@ -109,12 +109,17 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     justify-content: space-around;
     margin-bottom: 24px;
     padding-top: 20px;
+    position: fixed;
+    margin-left: 385px;
+}
+.navbar div{
+        position: absolute;
 }
 
 .navbar a {
     font-size: 18px;
     color: var(--BaseColor);
-    background-color: rgba(255, 255, 255, 0.833);
+    background-color: rgba(255, 255, 255, 0.918);
     padding: 8px;
     border-radius: 8px;
 }
@@ -126,6 +131,16 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
 
 /* ------------------------------------------------------------------------------
     @MEDIA ESTILOS NAVBAR */
+@media (max-width:1140px){
+    .navbar{
+        margin-left: 130px;
+    }
+}
+@media (max-width:768px) {
+    .navbar {
+        margin-left: 0px;
+    }
+}
 
 /* ------------------------------------------------------------------------------ */
 
@@ -241,20 +256,21 @@ h5 {
     border-radius: 20px;
 }
 
-.infohistoria h2{
+.infohistoria h2 {
     text-align: center;
     font-size: 32px;
     font-weight: 600;
     text-decoration: underline;
 }
-.infohistoria h3{
+
+.infohistoria h3 {
     text-align: center;
     font-size: 26px;
     font-weight: 500;
     text-decoration: underline;
 }
 
-.infohistoria p{
+.infohistoria p {
     font-size: 20px;
 }
 
@@ -286,14 +302,53 @@ h5 {
 /*-------------------------------------------------------------------------  */
 
 /* ESTILOS SECCION IMAGENES (PLATOS) */
-.platos img {
+/* .platos img {
     border-radius: 15px;
+} */
+
+.slider {
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
 }
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
 
 /* -------------------------------------------------------------------------
     @MEDIA ESTILOS SECCION IMAGENES / PLATOS */
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
     .platos {
         display: block;
         padding-left: 25px;
@@ -315,7 +370,7 @@ h5 {
     .platos div {
         max-width: 100%;
     }
-}
+} */
 
 /* ------------------------------------------------------------------------ */
 
@@ -357,7 +412,8 @@ h5 {
     .extra h3::before {
         display: none;
     }
-    .extra p{
+
+    .extra p {
         padding-left: 25px;
     }
 }
@@ -401,19 +457,22 @@ footer h2 {
 /* ------------------------------------------------------------------------------------------------
     @MEDIA SECCION SOCIAL  */
 
-    @media(max-width:768px){
-        
-        .insta{
-            padding-left: 100px;
-        }
-    }
-    @media(max-width:480px){
+@media(max-width:768px) {
 
-        .insta{
-            padding-left: 40px;
-        }
-        .facebook {
-            padding-left: 32px
-        }
+    .insta {
+        padding-left: 100px;
     }
+}
+
+@media(max-width:480px) {
+
+    .insta {
+        padding-left: 40px;
+    }
+
+    .facebook {
+        padding-left: 32px
+    }
+}
+
 /*---------------------------------------------------------------------------------------------------  */
