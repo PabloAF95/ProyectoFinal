@@ -15,6 +15,11 @@ html {
 body img{
     max-width: 100%;
 }
+
+.portada img{
+    max-width: 100%;
+}
+
 .contenedor {
     width: 60%;
     margin: 0 auto;
@@ -109,9 +114,8 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
 .navbar {
     font-family: var(--FuentePrincipal);
     display: flex;
-    justify-content: space-around;
+     justify-content: space-around;
     margin-bottom: 24px;
-    padding-top: 20px;
     position: fixed;
     margin-left: 385px;
 }
@@ -125,6 +129,7 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     background-color: rgba(255, 255, 255, 0.918);
     padding: 8px;
     border-radius: 8px;
+   
 }
 
 .navbar a:hover {
@@ -148,30 +153,21 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
 /* ------------------------------------------------------------------------------ */
 
 /* ESTILOS HEADER (CABESA) */
-.cabesa {
-    background-image: url(../img/CasaObduliaInterior.jpg);
+.cabesa img{
     background-size: cover;
     background-repeat: none;
-    padding: 400px 200px;
-    border-radius: 10px;
+    max-width: 100%;
 }
 
 .cabesaContacto {
-    background-image: url(../img/FachadaCasaObdulia.jpg);
     background-size: cover;
     background-repeat: none;
-    padding: 400px 200px;
-    border-radius: 10px;
+    max-width: 100%;
 }
 
 /* ----------------------------------------------------------------------------
     @MEDIA ESTILOS HEADER / CABESA */
 
-@media (max-width:768px) {
-    .cabesa {
-        padding: 200px 120px;
-    }
-}
 
 /* --------------------------------------------------------------------------- */
 
@@ -183,6 +179,8 @@ h1 {
     font-weight: 800;
     text-align: center;
     text-shadow: 4px 4px 8px rgba(6, 6, 114, 0.479);
+    padding-top: 40px;
+    margin-top: 30px;
 }
 
 h5 {
@@ -256,7 +254,6 @@ h5 {
     background-image: url(../img/FotoPlato5.png);
     background-size: cover;
     background-repeat: none;
-    /* padding-bottom: 400px; */
     border-radius: 20px;
 }
 
