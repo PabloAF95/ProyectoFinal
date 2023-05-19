@@ -12,6 +12,9 @@ html {
     box-sizing: border-box;
 }
 
+body img{
+    max-width: 100%;
+}
 .contenedor {
     width: 60%;
     margin: 0 auto;
@@ -246,13 +249,14 @@ h5 {
     background-repeat: none;
     padding-bottom: 400px;
     border-radius: 20px;
+    max-width: 100%;
 }
 
 .confoto {
     background-image: url(../img/FotoPlato5.png);
     background-size: cover;
     background-repeat: none;
-    padding-bottom: 400px;
+    /* padding-bottom: 400px; */
     border-radius: 20px;
 }
 
@@ -264,6 +268,7 @@ h5 {
 }
 
 .infohistoria h3 {
+    justify-content: center;
     text-align: center;
     font-size: 26px;
     font-weight: 500;
@@ -274,6 +279,10 @@ h5 {
     font-size: 20px;
 }
 
+.infohistoria img{
+    object-position: center;
+    max-width: 100%;
+}
 /* ---------------------------------------------------------------------------
     @MEDIA ESTILOS INFO */
 
