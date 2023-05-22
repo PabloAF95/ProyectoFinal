@@ -16,10 +16,6 @@ body img{
     max-width: 100%;
 }
 
-.portada img{
-    max-width: 100%;
-}
-
 .contenedor {
     width: 60%;
     margin: 0 auto;
@@ -44,7 +40,14 @@ body img{
 a {
     text-decoration: none;
 }
+.portada{
+    display: flex;
+    justify-content: center;
+}
 
+img{
+    border-radius: 10px;
+}
 /*---------------------------------------------------------------------------------
     @MEDIA ESTILOS BASICOS DE LA PAGINA*/
 
@@ -153,16 +156,20 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
 /* ------------------------------------------------------------------------------ */
 
 /* ESTILOS HEADER (CABESA) */
-.cabesa img{
+.cabesa{
     background-size: cover;
     background-repeat: none;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .cabesaContacto {
     background-size: cover;
     background-repeat: none;
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 }
 
 /* ----------------------------------------------------------------------------
@@ -280,10 +287,37 @@ h5 {
     object-position: center;
     max-width: 100%;
 }
+
+.zoom{
+    transition: transform .2s;
+}
+.zoom:hover{
+    transform: scale(1.5); 
+}
+
+.ubi::after{
+    content: url(../img/pin.png);
+}
+
+.call::after{
+     content: url(../img/call.png);
+}
+
+.reser::after{
+    content: url(../img/calendar.png);
+}
+
+.gluten::after{
+    content: url(../img/kitchen.png);
+}
+
+.close::after{
+    content: url(../img/not_disturb.png);
+}
 /* ---------------------------------------------------------------------------
     @MEDIA ESTILOS INFO */
 
-@media(max-width:768px) {
+@media(max-width:768px){
     .info {
         display: block;
         padding: 10px;
@@ -352,7 +386,7 @@ h5 {
 
 
 /* -------------------------------------------------------------------------
-    @MEDIA ESTILOS SECCION IMAGENES / PLATOS */
+    @MEDIA ESTILOS SECCION IMAGENES / PLATOS | ACTUALMENTE INSERVIBLE |*/ 
 
 /* @media(max-width:768px) {
     .platos {
