@@ -388,9 +388,8 @@ border-top: 10px;
 }
 */
 @media(max-width:480px) {
-    .slider {
+    .slider{
         padding-top: 30px;
-
     }
 }
 /* ------------------------------------------------------------------------ */
@@ -399,6 +398,7 @@ border-top: 10px;
 
 .alergenos{
     padding-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .alergenos h3{
@@ -407,11 +407,26 @@ border-top: 10px;
 }
 
 .GridAlergenos{
-     display: grid;
+   
+    display: grid;
     grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-columns: 25% 25% 25% 25%;
     gap: 10px;
-  
+}
+
+.GridAlergenos img{
+    border-radius: 80px;
+}
+/*  MEDIA ESTILOS ALERGENOS ------------------------------------------------ */
+
+@media(max-width:480px) {
+    .GridAlergenos {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        gap:2px;
+        margin: 5px 0px;
+        
+    }
 }
 
 /* ------------------------------------------------------------------------- */
