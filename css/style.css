@@ -78,8 +78,8 @@ img{
 
 /* NAV CON .DROPDOWN Y .DROPDOW-CONTENT 
 SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
-** FALLO ** -> NO SE VEN LAS LETRAS DEL DESPLEGABLE POR CULPA DE LA IMAGEN */
-/* nav{
+** FALLO ** -> NO SE VEN LAS LETRAS DEL DESPLEGABLE POR CULPA DE LA IMAGEN 
+nav{
     padding: 20px;
 }
 
@@ -168,18 +168,6 @@ SE DESPLIEGA AL PASAR EL PUNTERO POR ENCIMA.
     margin-bottom: 15px;
 }
 
-.cabesaContacto {
-    background-size: cover;
-    background-repeat: none;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px;
-}
-
-/* ----------------------------------------------------------------------------
-    @MEDIA ESTILOS HEADER / CABESA */
-
-
 /* --------------------------------------------------------------------------- */
 
 /* ESTILOS DE ENCABEZADOS ( H1 a H6 ) */
@@ -219,16 +207,19 @@ h5 {
     }
 }
 
-/*--------------------------------------------------------------------------  */
+/* --------------------------------------------------------------------------  */
 
 /* ESTILOS INFO */
 .info {
+    display: flex;
     margin-top: 20px;
     text-align: center;
+    justify-content: center;
 }
 
 .info div {
-    margin: 5px 5px;
+    margin: 5px;
+    border: 2px solid black;
 }
 
 .textinfo {
@@ -241,18 +232,15 @@ h5 {
     background: linear-gradient(to bottom, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0); */
     
-    display:grid;
-    /* grid-template-columns: ; 
-    columns: 2;*/
-    grid-template-rows:30%,40%,30%;
-    
+    width: 480px;
     border-radius: 20px;
     font-size: 20px;
     font-family: var(--FuentePrincipal);
     font-weight: 500;
     color: rgb(27, 44, 88);
-   
+    background-color: #b0cbd8;
 }
+
 
 .confoto {
     background-image: url(../img/FotoPlato5.png);
@@ -289,7 +277,7 @@ h5 {
     transition: transform .2s;
 }
 .zoom:hover{
-    transform: scale(1.5); 
+    transform: scale(1.2); 
 }
 
 .ubi::after{
@@ -339,9 +327,12 @@ h5 {
 /*-------------------------------------------------------------------------  */
 
 /* ESTILOS SECCION IMAGENES (PLATOS) */
-/* .platos img {
-    border-radius: 15px;
-} */
+
+.platos{
+margin-top: 10px;
+padding-top: 20px;
+border-top: 10px;
+}
 
 .slider {
 	width: 100%;
@@ -397,19 +388,19 @@ h5 {
         max-width: 100%;
     }
 }
-
+*/
 @media(max-width:480px) {
-    .platos {
-        margin: 0px;
+    .slider {
+        padding-top: 30px;
 
     }
-
-    .platos div {
-        max-width: 100%;
-    }
-} */
-
+}
 /* ------------------------------------------------------------------------ */
+
+/* ESTILOS SECCION ALERGENOS */
+
+
+/* ------------------------------------------------------------------------- */
 
 /* ESTILOS SECCION EXTRA */
 .extra {
