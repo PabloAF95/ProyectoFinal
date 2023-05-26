@@ -238,9 +238,7 @@ h5 {
     font-family: var(--FuentePrincipal);
     font-weight: 500;
     color: rgb(27, 44, 88);
-    background-color: #b0cbd8;
 }
-
 
 .confoto {
     background-image: url(../img/FotoPlato5.png);
@@ -399,6 +397,10 @@ border-top: 10px;
 
 /* ESTILOS SECCION ALERGENOS */
 
+.alergenos h3{
+    text-align: center;
+    font-size: 26px;
+}
 
 /* ------------------------------------------------------------------------- */
 
