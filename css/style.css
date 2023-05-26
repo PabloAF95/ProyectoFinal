@@ -465,12 +465,12 @@ border-top: 10px;
     text-align: center;
 }
 
-/* .extra h3::before {
+.extra h3::before {
     content: url(../img/infoicon.png);
     padding-top: 40px;
     padding-right: 10px;
     margin-top: 10px;
-} */
+}
 
 .extra p {
     text-align: center;
@@ -489,7 +489,7 @@ border-top: 10px;
     }
 
     .extra h3::before {
-        display: none;
+        display: none;  
     }
 
     .extra p {
