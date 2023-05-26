@@ -397,9 +397,21 @@ border-top: 10px;
 
 /* ESTILOS SECCION ALERGENOS */
 
+.alergenos{
+    padding-bottom: 20px;
+}
+
 .alergenos h3{
     text-align: center;
     font-size: 26px;
+}
+
+.GridAlergenos{
+     display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+  
 }
 
 /* ------------------------------------------------------------------------- */
