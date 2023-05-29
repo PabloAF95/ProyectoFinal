@@ -51,6 +51,7 @@ img{
     max-width: 100%;
     border-radius: 10px;
 }
+
 /*---------------------------------------------------------------------------------
     @MEDIA ESTILOS BASICOS DE LA PAGINA*/
 
@@ -266,10 +267,14 @@ h5 {
 
 .infohistoria p {
     font-size: 20px;
+    background-color: rgb(233, 233, 233);
+    border: 2px solid black;
+    padding: 8px;
 }
 
 .infohistoria img{
-    object-position: center;
+    display:flex;
+    justify-content:center;
     max-width: 100%;
 }
 
@@ -426,9 +431,9 @@ border-top: 10px;
 .GridAlergenos{
    
     display: grid;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 16px;
 }
 
 .GridAlergenos img{
