@@ -8,11 +8,13 @@
 /* ESTILOS BASICOS DE LA PAGINA */
 
 html {
-    background-color: rgb(119, 119, 119);
+    /* background-color: rgb(119, 119, 119); */
+    background: #FFFFFF;
+    background: linear-gradient(180deg, #FFFFFF, #777777);
     box-sizing: border-box;
 }
 
-body img{
+body img {
     max-width: 100%;
 }
 
@@ -40,12 +42,13 @@ body img{
 a {
     text-decoration: none;
 }
-.portada{
+
+.portada {
     display: flex;
     justify-content: center;
 }
 
-img{
+img {
     display: flex;
     justify-content: center;
     max-width: 100%;
@@ -124,10 +127,11 @@ nav{
     justify-content: space-around;
     margin-bottom: 24px;
     position: fixed;
-    margin-left: 385px;
+    margin-left: 360px;
 }
-.navbar div{
-        position: absolute;
+
+.navbar div {
+    position: absolute;
 }
 
 .navbar a {
@@ -136,7 +140,7 @@ nav{
     background-color: rgba(255, 255, 255, 0.918);
     padding: 8px;
     border-radius: 8px;
-   
+
 }
 
 .navbar a:hover {
@@ -146,21 +150,22 @@ nav{
 
 /* ------------------------------------------------------------------------------
     @MEDIA ESTILOS NAVBAR */
-@media (max-width:1140px){
-    .navbar{
+@media (max-width:1140px) {
+    .navbar {
         margin-left: 130px;
     }
 }
+
 @media (max-width:768px) {
     .navbar {
-        margin-left: 0px;
+        margin-left: 20px;
     }
 }
 
 /* ------------------------------------------------------------------------------ */
 
 /* ESTILOS HEADER (CABESA) */
-.cabesa{
+.cabesa {
     background-size: cover;
     background-repeat: none;
     max-width: 100%;
@@ -192,7 +197,7 @@ h5 {
     color: rgb(218, 167, 0);
     border-radius: 20px;
     border-width: fit-content;
-   
+
 }
 
 /* ---------------------------------------------------------------------------
@@ -233,14 +238,14 @@ h5 {
     background: -ms-linear-gradient(top, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
     background: linear-gradient(to bottom, rgba(242, 246, 248, 1) 0%, rgba(242, 246, 248, 1) 5%, rgba(216, 225, 231, 1) 42%, rgba(181, 198, 208, 1) 73%, rgba(224, 239, 249, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f6f8', endColorstr='#e0eff9', GradientType=0); */
-    
+
     width: 480px;
     border-radius: 20px;
     font-size: 22px;
     /* font-family: var(--FuentePrincipal); */
     font-weight: 500;
     color: rgb(0, 0, 0);
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(245, 245, 245);
 }
 
 .confoto {
@@ -272,70 +277,77 @@ h5 {
     padding: 8px;
 }
 
-.infohistoria img{
-    display:flex;
-    justify-content:center;
+.infohistoria img {
+    display: flex;
+    justify-content: center;
     max-width: 100%;
 }
 
-.zoom{
+.zoom {
     transition: transform .2s;
 }
-.zoom:hover{
-    transform: scale(1.2); 
+
+.zoom:hover {
+    transform: scale(1.2);
 }
 
-.ubi::after{
+.ubi::after {
     content: url(../img/pin.png);
 }
 
-.call::after{
-     content: url(../img/call.png);
+.call::after {
+    content: url(../img/call.png);
 }
 
-.reser::after{
+.reser::after {
     content: url(../img/calendar.png);
 }
 
-.gluten::after{
+.gluten::after {
     content: url(../img/kitchen.png);
 }
 
-.close::after{
+.close::after {
     content: url(../img/not_disturb.png);
 }
+
 /* ---------------------------------------------------------------------------
     @MEDIA ESTILOS INFO */
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .info {
-        padding: 10px;
+        /* padding: 10px; */
         margin: 20px;
-        display:grid;
+        display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr;
     }
 
     .info div {
-        max-width: 100%;
-    }
-
-    .confoto{
-        max-width: fit-content;
+        max-width: 99%;
     }
     
+    .textinfo p{
+       text-align: center;
+    }
 }
 
 @media(max-width:480px) {
     .info {
-        margin: 0px;
-        display:grid;
+        text-align: center;
+        margin: 20px;
+        max-width: fit-content;
+        /* display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; */
     }
 
     .info div {
-        max-width: 100%;
+        max-width:90%;
+    }
+    
+    .confoto{
+        max-width: fit-content;
     }
 }
 
@@ -343,53 +355,73 @@ h5 {
 
 /* ESTILOS SECCION IMAGENES (PLATOS) */
 
-.platos{
-margin-top: 10px;
-padding-top: 20px;
-border-top: 10px;
+.platos {
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top: 10px;
 }
 
 .slider {
-	width: 100%;
-	margin: auto;
-	overflow: hidden;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .slider ul {
-	display: flex;
-	padding: 0;
-	width: 500%;
-	animation: cambio 20s infinite alternate linear;
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: cambio 20s infinite alternate linear;
 }
 
 .slider li {
-	width: 100%;
-	list-style: none;
+    width: 100%;
+    list-style: none;
 }
 
 .slider img {
-	width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 
 @keyframes cambio {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
 }
 
 
 
 /* -------------------------------------------------------------------------
-    @MEDIA ESTILOS SECCION IMAGENES / PLATOS | ACTUALMENTE INSERVIBLE |*/ 
+    @MEDIA ESTILOS SECCION IMAGENES / PLATOS | ACTUALMENTE INSERVIBLE |*/
 
 /* @media(max-width:768px) {
     .platos {
@@ -405,20 +437,21 @@ border-top: 10px;
 }
 */
 @media(max-width:480px) {
-    .slider{
+    .slider {
         padding-top: 30px;
     }
 }
+
 /* ------------------------------------------------------------------------ */
 
 /* ESTILOS SECCION ALERGENOS */
 
-.alergenos{
+.alergenos {
     padding-bottom: 20px;
     margin-bottom: 25px;
 }
 
-.alergenos h3{
+.alergenos h3 {
     display: flex;
     text-align: center;
     font-size: 26px;
@@ -428,26 +461,27 @@ border-top: 10px;
     flex-direction: column;
 }
 
-.GridAlergenos{
-   
+.GridAlergenos {
+
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 16px;
 }
 
-.GridAlergenos img{
+.GridAlergenos img {
     border-radius: 80px;
 }
+
 /*  MEDIA ESTILOS ALERGENOS ------------------------------------------------ */
 
 @media(max-width:480px) {
     .GridAlergenos {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr; 
-        gap:2px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2px;
         margin: 5px 0px;
-        
+
     }
 }
 
@@ -458,10 +492,10 @@ border-top: 10px;
     display: flex;
     justify-content: center;
     padding: 10px;
-    
+
 }
 
-.extra div{
+.extra div {
     border: 2px solid black;
     border-radius: 5px;
     padding: 3px;
@@ -499,7 +533,7 @@ border-top: 10px;
     }
 
     .extra h3::before {
-        display: none;  
+        display: none;
     }
 
     .extra p {
