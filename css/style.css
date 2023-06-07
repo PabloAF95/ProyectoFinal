@@ -178,7 +178,7 @@ nav{
 
 /* ESTILOS DE ENCABEZADOS ( H1 a H6 ) */
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(226, 186, 8);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 80px;
     font-weight: 800;
@@ -408,8 +408,6 @@ h5 {
     }
 }
 
-
-
 /* -------------------------------------------------------------------------
     @MEDIA ESTILOS SECCION IMAGENES / PLATOS | ACTUALMENTE INSERVIBLE |*/
 
@@ -452,10 +450,10 @@ h5 {
 }
 
 .GridAlergenos {
-
+    margin-left: 45px;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 16px;
 }
 
@@ -470,7 +468,7 @@ h5 {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2px;
-        margin: 5px 0px;
+        margin: 0px auto;
 
     }
 }
@@ -537,7 +535,6 @@ h5 {
         padding-left: 10px;
     }
 }
-
 
 /*---------------------------------------------------------------------------  */
 
