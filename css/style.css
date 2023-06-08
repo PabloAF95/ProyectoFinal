@@ -303,7 +303,39 @@ h5 {
 .close::after {
     content: url(../img/not_disturb.png);
 }
-
+/* -------------------------------- */
+.calendar {
+    width: 300px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 5px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #ccc;
+  }
+  
+  td {
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .selected {
+    background-color: #b3d4fc;
+  }
+  
 /* ---------------------------------------------------------------------------
     @MEDIA ESTILOS INFO */
 

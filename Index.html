@@ -11,6 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -34,7 +35,7 @@
         <h5 class="contenedor">¿Buscando un lugar para comer o cenar en Vigo? <br>
             Entonces estás en el lugar indicado</h5>
         <div class="info">
-            <div> 
+            
                 <!-- https://github.com/fullcalendar/fullcalendar Repositorio Github de FullCalendar -->
                 
                 <div class="textinfo">
@@ -59,9 +60,31 @@
                     <p>Abrimos de <b>Miercoles a Domingo</b> de <b>9:00 a 17:00</b><br> y de <b>19:00 a 23:30</b></p>
                     <p class="close"> <b>Cerramos Lunes y Martes por descanso. </b></p>
 
-                    <!-- <div class="divhorizontal"></div> -->
+    
                 </div>
-            </div>
+                <div class="calendar">
+                    <div class="header">
+                      <button id="prevBtn">&lt;</button>
+                      <h2 id="monthYear"></h2>
+                      <button id="nextBtn">&gt;</button>
+                    </div>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Domingo</th>
+                          <th>Lunes</th>
+                          <th>Martes</th>
+                          <th>Miércoles</th>
+                          <th>Jueves</th>
+                          <th>Viernes</th>
+                          <th>Sábado</th>
+                        </tr>
+                      </thead>
+                      <tbody id="calendarBody">
+                      </tbody>
+                    </table>
+                  </div>
+                  
 
             <!-- https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/  ¡¡IDEA!!-->
             <!-- https://medium.com/@MissTipsi/las-10-webs-de-restaurantes-que-m%C3%A1s-nos-gustan-c6ddad5948bd -->
@@ -188,7 +211,7 @@
                     alt="thefork"></a>
         </div>
     </footer>
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>
