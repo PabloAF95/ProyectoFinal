@@ -93,3 +93,49 @@ nextBtn.addEventListener('click', () => {
 
 // Actualizar el calendario inicialmente
 updateCalendar();
+
+const express = require('express');
+const mysql = require('mysql');
+const app = express();
+const port = 3000;
+
+// Configuración de la conexión a la base de datos
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'tu_usuario',
+  password: 'tu_contraseña',
+  database: 'nombre_de_tu_base_de_datos'
+});
+
+// Establecer la conexión a la base de datos
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Conexión exitosa a la base de datos');
+});
+
+// Manejar la solicitud de reserva
+app.post('/reservas', (req, res) => {
+  const selectedDate = req.body.selectedDate; // Obtener la fecha seleccionada desde la solicitud
+
+  // Verificar si la fecha ya está reservada en la base de datos
+  const checkQuery = `SELECT * FROM reservas WHERE fecha = '${selectedDate}'`;
+  connection.query(checkQuery, (err, results) => {
+    if (err) throw err;
+
+    if (results.length > 0) {
+      res.send('La fecha seleccionada ya está reservada');
+    } else {
+      // Insertar la reserva en la base de datos
+      const insertQuery = `INSERT INTO reservas (fecha) VALUES ('${selectedDate}')`;
+      connection.query(insertQuery, (err, results) => {
+        if (err) throw err;
+        res.send('Reserva exitosa');
+      });
+    }
+  });
+});
+
+// Iniciar el servidor
+app.listen(port, () => {
+  console.log(`Servidor en funcionamiento en http://localhost:${port}`);
+});
