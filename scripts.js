@@ -93,17 +93,16 @@ nextBtn.addEventListener('click', () => {
 
 // Actualizar el calendario inicialmente
 updateCalendar();
-
-const express = require('express');
 const mysql = require('mysql');
+const express = require('express');
 const app = express();
 const port = 3000;
 
 // Configuración de la conexión a la base de datos
 const connection = mysql.createConnection({
   host: 'localhost',
-  user: 'tu_usuario',
-  password: 'tu_contraseña',
+  user: '',
+  password: 'FullstackVigo',
   database: 'nombre_de_tu_base_de_datos'
 });
 
@@ -115,7 +114,8 @@ connection.connect((err) => {
 
 // Manejar la solicitud de reserva
 app.post('/reservas', (req, res) => {
-  const selectedDate = req.body.selectedDate; // Obtener la fecha seleccionada desde la solicitud
+  const selectedDate = req.body.selectedDate; 
+  // Obtener la fecha seleccionada desde la solicitud
 
   // Verificar si la fecha ya está reservada en la base de datos
   const checkQuery = `SELECT * FROM reservas WHERE fecha = '${selectedDate}'`;

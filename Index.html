@@ -11,7 +11,24 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
   
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.slider').slick({
+      // Opciones de configuración del slider
+      autoplay: false,
+      dots: true,
+      arrows: true,
+      // Otros ajustes que desees personalizar
+    });
+  });
+</script>
 </head>
 
 <body>
@@ -60,9 +77,8 @@
                     <p>Abrimos de <b>Miercoles a Domingo</b> de <b>9:00 a 17:00</b><br> y de <b>19:00 a 23:30</b></p>
                     <p class="close"> <b>Cerramos Lunes y Martes por descanso. </b></p>
 
-    
                 </div>
-                <div class="calendar">
+              <div class="calendar">
                     <div class="header">
                       <button id="prevBtn">&lt;</button>
                       <h2 id="monthYear"></h2>
@@ -70,7 +86,17 @@
                     </div>
                     <table>
                       <thead>
+                        <!-- La etiqueta <thead> en HTML es utilizada 
+                            para definir un bloque que contiene las celdas 
+                            de encabezado de una tabla. El contenido dentro 
+                            de esta etiqueta se considera como un encabezado 
+                            de tabla y se utiliza para describir el contenido 
+                            de las columnas de la tabla. -->
                         <tr>
+                            <!-- La etiqueta <tr> en HTML representa una fila en una tabla.
+                                Es utilizada dentro de una etiqueta <table> para definir una fila de celdas,
+                                las cuales son contenidas dentro de etiquetas <td> o <th>
+                                (que representan una celda de datos o una celda de encabezado, respectivamente). -->
                           <th>Domingo</th>
                           <th>Lunes</th>
                           <th>Martes</th>
@@ -81,15 +107,15 @@
                         </tr>
                       </thead>
                       <tbody id="calendarBody">
+                        <!-- El elemento <tbody> delimita las otras partes del contenido de la tabla que no están en el encabezado o en el pie de página de la tabla. Aparecerá debajo del encabezado de la tabla o, a veces, en el pie de página, según cómo hayas decidido estructurarlo. -->
                       </tbody>
-                    </table>
+                    </table> 
                   </div>
-                  
-
             <!-- https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/  ¡¡IDEA!!-->
             <!-- https://medium.com/@MissTipsi/las-10-webs-de-restaurantes-que-m%C3%A1s-nos-gustan-c6ddad5948bd -->
         </div>
-
+                
+                  
     </section>
 
     <br>
@@ -128,9 +154,22 @@
     </section>
 
     <!-- SECCION DE IMAGENES (PLATOS) -->
-    <section class="contenedorancho platos">
+    <section class="contenedor platos">
 
-        <div class="slider">
+        <div class="slider contenedorancho">
+            <div><img src="img/FotoPlato2.png" alt="Imagen 1"></div>
+            <div><img src="img/FotoPlato3.png" alt="Imagen 2"></div>
+            <div><img src="img/FotoPlato4.png" alt="Imagen 4"></div>
+            <div><img src="img/FotoPlato6.png" alt="Imagen 6"></div>
+            <div><img src="img/FotoPlato7.png" alt="Imagen 7"></div>
+            <div><img src="img/FotoPlato8.png" alt="Imagen 8"></div>
+            <div><img src="img/FotoPlato5.png" alt="Imagen 5"></div>
+            <div><img src="img/FotoPlato10.png" alt="Imagen 10"></div>
+            <div><img src="img/FotoPlato11.png" alt="Imagen 11"></div>
+            <div><img src="img/FotoPlato12.png" alt="Imagen 12"></div>
+          </div>
+
+        <!-- <div class="sliderb">
             <ul>
                 <li>
                     <img class="zoom" src="img/FotoPlato2.png" alt="FotoPlato2">
@@ -163,12 +202,10 @@
                     <img class="zoom" src="img/FotoPlato12.png" alt="FotoPlato12">
                 </li>
             </ul>
-        </div>
+        </div> -->
     </section>
 
-    <div class="divhorizontal contenedorancho"></div>
-
-    <!-- <div class="divhorizontal contenedor"></div> -->
+    <div class="divhorizontal contenedor"></div>
 
     <!-- SECCION EXTRA (MAS INFORMACION RELACIONADA CON EL LOCAL) -->
     <section class="contenedor">
@@ -193,8 +230,6 @@
         </div>
 
     </section>
-
-    <!-- <div class="divhorizontal contenedor"></div> -->
 
     <!-- SECCION SOCIAL (FOOTER PA LOS COLEGAS) -->
     <!-- -------------------------------------------------------------------------------------- -->
