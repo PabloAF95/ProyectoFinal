@@ -11,6 +11,24 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').slick({
+          // Opciones de configuración del slider
+          autoplay: true,
+          dots: true,
+          arrows: true,
+          // Otros ajustes que desees personalizar
+        });
+      });
+    </script>
 </head>
 
 <body>
@@ -38,6 +56,19 @@
         <section class="contenedorancho platos">
 
             <div class="slider">
+                <div><img src="img/FotoPlato2.png" alt="Imagen 1"></div>
+                <div><img src="img/FotoPlato3.png" alt="Imagen 2"></div>
+                <div><img src="img/FotoPlato4.png" alt="Imagen 4"></div>
+                <div><img src="img/FotoPlato6.png" alt="Imagen 6"></div>
+                <div><img src="img/FotoPlato7.png" alt="Imagen 7"></div>
+                <div><img src="img/FotoPlato8.png" alt="Imagen 8"></div>
+                <div><img src="img/FotoPlato5.png" alt="Imagen 5"></div>
+                <div><img src="img/FotoPlato10.png" alt="Imagen 10"></div>
+                <div><img src="img/FotoPlato11.png" alt="Imagen 11"></div>
+                <div><img src="img/FotoPlato12.png" alt="Imagen 12"></div>
+              </div>
+
+            <!-- <div class="sliderb">
                 <ul>
                     <li>
                         <img class="zoom" src="img/FotoPlato2.png" alt="FotoPlato2">
@@ -70,7 +101,7 @@
                         <img class="zoom" src="img/FotoPlato12.png" alt="FotoPlato12">
                     </li>
                 </ul>
-            </div>
+            </div> -->
         </section>
         <div>
             <p>Llevamos toda la vida ofreciendo a los vigueses comida casera de buena calidad,

@@ -233,7 +233,6 @@ h5 {
 .info div {
     flex: 50%;
     margin: 5px;
-    border: 2px solid black;
 }
 
 .textinfo {
@@ -315,62 +314,64 @@ h5 {
     font-size: 18px;
   }
   
-  .header {
+.header {
     text-align: center;
     margin-bottom: 10px;
   }
   
-  table {
+table {
     width: 100%;
   }
   
-  th, td {
+th, td {
     padding: 5px;
     text-align: center;
   }
   
-  th {
+th {
     background-color: #ccc;
   }
   
-  td {
+td {
     border: 1px solid #ccc;
     cursor: pointer;
   }
   
-  .selected {
+.selected {
     background-color: #b3d4fc;
   }
-  
+
 /* ---------------------------------------------------------------------------
     @MEDIA ESTILOS INFO */
 
 @media(max-width:768px) {
     .info {
-        /* padding: 10px; */
         margin: 20px;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
+        display: block;
     }
 
     .info div {
-        max-width: 99%;
+        max-width: 100%;
     }
     
     .textinfo p{
        text-align: center;
     }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+    }
+
 }
 
 @media(max-width:480px) {
     .info {
+        display: block;
         text-align: center;
         margin: 20px;
         max-width: fit-content;
-        /* display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr; */
     }
 
     .info div {
@@ -379,6 +380,18 @@ h5 {
     
     .confoto{
         max-width: fit-content;
+    }
+
+    /* .calendar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    } */
+
+.calendar {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
     }
 }
 
@@ -390,27 +403,33 @@ h5 {
     margin-top: 10px;
     padding-top: 20px;
     border-top: 10px;
+    max-width: 22%;
 }
 
-.slider {
+ .slider {
     width: 100%;
     margin: auto;
     overflow: hidden;
 }
 
-.slider ul {
+ /* .sliderb {
+    width: 100%;
+    margin: auto;
+}
+
+.sliderb ul {
     display: flex;
     padding: 0;
     width: 500%;
     animation: cambio 20s infinite alternate linear;
 }
 
-.slider li {
+.sliderb li {
     width: 100%;
     list-style: none;
 }
 
-.slider img {
+.sliderb img {
     width: 100%;
     border-radius: 10px;
 }
@@ -447,7 +466,7 @@ h5 {
     100% {
         margin-left: -300%;
     }
-}
+}  */
 
 /* -------------------------------------------------------------------------
     @MEDIA ESTILOS SECCION IMAGENES / PLATOS | ACTUALMENTE INSERVIBLE |*/
@@ -488,7 +507,7 @@ h5 {
     font-size: 26px;
     background-color: rgb(0, 0, 0);
     color: rgb(206, 159, 5);
-    border-radius: 10px;
+    border-radius: 16px;
     flex-direction: column;
 }
 
