@@ -8,8 +8,8 @@
 /* ESTILOS BASICOS DE LA PAGINA */
 
 html {
-    background: #FFFFFF;
-    background: linear-gradient(180deg, #FFFFFF, #777777);
+    background: #B4CFFA;
+    /* background: linear-gradient(180deg, #FFFFFF, #777777); */
     box-sizing: border-box;
 }
 
@@ -18,7 +18,7 @@ body img {
 }
 
 .contenedor {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -199,7 +199,6 @@ h5 {
     color: rgb(218, 167, 0);
     border-radius: 20px;
     border-width: fit-content;
-
 }
 
 /* ---------------------------------------------------------------------------
@@ -218,8 +217,13 @@ h5 {
 /* --------------------------------------------------------------------------  */
 
 /* ESTILOS INFO */
+.cinfo{
+    background-color: #b9cffa;
+    border-radius: 10px;
+}
 
 .info {
+
     display: flex;
     margin-top: 20px;
     text-align: center;
@@ -238,7 +242,7 @@ h5 {
     font-size: 22px;
     font-weight: 500;
     color: rgb(0, 0, 0);
-    background-color: rgb(245, 245, 245);
+    background-color: #F5E8C7;
 }
 
 .confoto {
@@ -303,6 +307,7 @@ h5 {
 .close::after {
     content: url(../img/not_disturb.png);
 }
+
 /* -------------------------------- */
 .calendar {
     width: 300px;
@@ -472,6 +477,7 @@ h5 {
 /* ESTILOS SECCION ALERGENOS */
 
 .alergenos {
+    background-color: #FAC0B5;
     padding-bottom: 20px;
     margin-bottom: 25px;
 }
@@ -487,7 +493,7 @@ h5 {
 }
 
 .GridAlergenos {
-    margin-left: 45px;
+    margin-left: 60px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -499,14 +505,20 @@ h5 {
 }
 
 /*  MEDIA ESTILOS ALERGENOS ------------------------------------------------ */
-
+@media(max-width:768px) {
+    .GridAlergenos {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2px;
+        margin: 0 auto;
+    }
+}
 @media(max-width:480px) {
     .GridAlergenos {
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2px;
-        margin: 0px auto;
-
+        margin: 0 auto;
     }
 }
 
@@ -518,14 +530,13 @@ h5 {
     display: flex;
     justify-content: center;
     padding: 10px;
-
 }
 
 .extra div {
     border: 2px solid black;
     border-radius: 5px;
     padding: 3px;
-    background-color: rgb(214, 214, 214);
+    background-color: #D0FAAD;
 }
 
 .extra h3 {
