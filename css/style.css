@@ -126,7 +126,7 @@ nav{
     justify-content: space-around;
     margin-bottom: 24px;
     position: fixed;
-    margin-left: 360px;
+    margin-left: 340px;
 }
 
 .navbar div {
@@ -217,13 +217,8 @@ h5 {
 /* --------------------------------------------------------------------------  */
 
 /* ESTILOS INFO */
-.cinfo{
-    background-color: #b9cffa;
-    border-radius: 10px;
-}
 
 .info {
-
     display: flex;
     margin-top: 20px;
     text-align: center;
@@ -312,34 +307,35 @@ h5 {
     width: 300px;
     font-family: Arial, sans-serif;
     font-size: 18px;
-  }
-  
+}
+
 .header {
     text-align: center;
     margin-bottom: 10px;
-  }
-  
+}
+
 table {
     width: 100%;
-  }
-  
-th, td {
+}
+
+th,
+td {
     padding: 5px;
     text-align: center;
-  }
-  
+}
+
 th {
     background-color: #ccc;
-  }
-  
+}
+
 td {
     border: 1px solid #ccc;
     cursor: pointer;
-  }
-  
+}
+
 .selected {
     background-color: #b3d4fc;
-  }
+}
 
 /* ---------------------------------------------------------------------------
     @MEDIA ESTILOS INFO */
@@ -353,15 +349,15 @@ td {
     .info div {
         max-width: 100%;
     }
-    
-    .textinfo p{
-       text-align: center;
+
+    .textinfo p {
+        text-align: center;
     }
 
     .calendar {
-      display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 10px;
     }
 
 }
@@ -375,23 +371,17 @@ td {
     }
 
     .info div {
-        max-width:90%;
+        max-width: 90%;
     }
-    
-    .confoto{
+
+    .confoto {
         max-width: fit-content;
     }
 
-    /* .calendar {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    } */
-
-.calendar {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+    .calendar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 }
 
@@ -406,30 +396,29 @@ td {
     max-width: 22%;
 }
 
- .slider {
-    width: 100%;
+.slider {
     margin: auto;
     overflow: hidden;
 }
 
- /* .sliderb {
+/* .slider {
     width: 100%;
     margin: auto;
 }
 
-.sliderb ul {
+.slider ul {
     display: flex;
     padding: 0;
     width: 500%;
     animation: cambio 20s infinite alternate linear;
 }
 
-.sliderb li {
+.slider li {
     width: 100%;
     list-style: none;
 }
 
-.sliderb img {
+.slider img {
     width: 100%;
     border-radius: 10px;
 }
@@ -532,8 +521,10 @@ td {
         margin: 0 auto;
     }
 }
+
 @media(max-width:480px) {
     .GridAlergenos {
+        width: 100%;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 2px;
@@ -544,11 +535,17 @@ td {
 /* ------------------------------------------------------------------------- */
 
 /* ESTILOS SECCION EXTRA */
-
+.sectionFinal{
+    display: flex;
+}
+.sectionFinal .derecho{
+    justify-content: right;
+}
 .extra {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 10px;
+    margin-right: -250px;
 }
 
 .extra div {
