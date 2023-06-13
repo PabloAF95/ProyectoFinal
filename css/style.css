@@ -303,6 +303,7 @@ h5 {
 }
 
 /* -------------------------------- */
+
 .calendar {
     width: 300px;
     font-family: Arial, sans-serif;
@@ -501,11 +502,11 @@ td {
 }
 
 .GridAlergenos {
-    margin-left: 60px;
+    margin-left: 160px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 16px;
+    gap: 20px;
 }
 
 .GridAlergenos img {
