@@ -329,12 +329,12 @@ th {
 }
 
 td {
-    border: 1px solid #ccc;
+    border: 1px solid #0a21a5;
     cursor: pointer;
 }
 
 .selected {
-    background-color: #b3d4fc;
+    background-color: #10ad52;
 }
 
 /* ---------------------------------------------------------------------------
