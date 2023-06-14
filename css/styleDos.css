@@ -1,0 +1,40 @@
+/* Estilos del navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      margin: 5px 0;
+    }
+  }
+  
+  /* Estilos adicionales para mover el navbar al desplazarse */
+  @media screen and (min-width: 601px) {
+    .navbar.scroll {
+      top: -80px;
+    }
+  }
+  
+  
+  
