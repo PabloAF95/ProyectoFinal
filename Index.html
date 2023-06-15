@@ -17,7 +17,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     <script>
         $(document).ready(function () {
             $('.slider').slick({
@@ -28,14 +28,14 @@
                 // Otros ajustes que desees personalizar
             });
         });
-    </script>
+    </script> -->
 
 </head>
 
 <body>
     <!-- BOTONES DEL NAVBAR -->
-    <nav class="contenedor navbar">
-        <div class="contenedor">
+    <nav class="navbar">
+        <div>
             <a href="#"><b>Inicio</b></a>
             <a href="Historia.html"><b>Historia</b></a>
         </div>
@@ -51,7 +51,7 @@
 
     <section class="contenedor">
 
-        <h5 class="contenedor">¿Buscando un lugar para comer o cenar en Vigo? <br>
+        <h5>¿Buscando un lugar para comer o cenar en Vigo? <br>
             Entonces estás en el lugar indicado</h5>
         <div class="info">
 
@@ -60,7 +60,7 @@
                             href="https://www.google.com/maps/place/Casa+Obdulia/@42.2513377,-8.6913778,17z/data=!3m1!4b1!4m6!3m5!1s0xd2f62e58bf7e47f:0x981e4b9fb12f9065!8m2!3d42.2513377!4d-8.6891891!16s%2Fg%2F11bc73sbg0">Avd/
                             Galicia, 140, 36216 Vigo España </a></b></p>
 
-                <div class="divhorizontal"></div>
+
                 <p>Nuestro número de teléfono es el <a href="tel:+34986452630"><b class="call">986 45 26 30 </b></a>
                     <br>
                     <br> También puedes hacer una reserva desde
@@ -70,16 +70,16 @@
                     <b>(Precio mínimo de 25 €)</b><br>
                     <!-- <br> Los precios de los menús oscilan entre <b>8€ y 50€</b> -->
                 </p>
-                <div class="divhorizontal"></div>
+
                 <p>También ofrecemos variedad de platos <b class="gluten">sin gluten </b></p>
 
-                <div class="divhorizontal"></div>
+
                 <p>Abrimos de <b>Miercoles a Domingo</b> de <b>9:00 a 17:00</b><br> y de <b>19:00 a 23:30</b></p>
                 <p class="close"> <b>Cerramos Lunes y Martes por descanso. </b></p>
 
             </div>
 
-            <div class="calendar">
+            <div class="calendar contenedor">
                 <div class="header">
                     <button id="prevBtn">&lt;</button>
                     <h2 id="monthYear"></h2>
@@ -127,7 +127,7 @@
             <h3>¿Tienes alergia a algo? No dudes en avisarnos.</h3>
         </u>
         <!-- HAY QUE DUPLICARLAS E INVERTIR LOS COLORES PARA LOS HOVERS DE LAS MISMAS -->
-        <div class="contenedor"></div>
+        <div></div>
         <div class="GridAlergenos">
 
             <img class="zoom" src="img/Alcohol.png" alt="Alcohol">
@@ -199,7 +199,7 @@
     </section>
 
     <!-- SECCION EXTRA (MAS INFORMACION RELACIONADA CON EL LOCAL) -->
-    <section class="contenedor sectionFinal">
+    <section class="contenedor">
 
         <div class="extra">
             <div>
@@ -217,38 +217,33 @@
                         Servicio de pensión.
                     </p>
                 </div>
-
             </div>
         </div>
-
-        <div class="slider platos">
-            <div><img src="img/FotoPlato2.png" alt="Imagen 1"></div>
-            <div><img src="img/FotoPlato3.png" alt="Imagen 2"></div>
-            <div><img src="img/FotoPlato4.png" alt="Imagen 4"></div>
-            <div><img src="img/FotoPlato6.png" alt="Imagen 6"></div>
-            <div><img src="img/FotoPlato7.png" alt="Imagen 7"></div>
-            <div><img src="img/FotoPlato8.png" alt="Imagen 8"></div>
-            <div><img src="img/FotoPlato5.png" alt="Imagen 5"></div>
-            <div><img src="img/FotoPlato10.png" alt="Imagen 10"></div>
-            <div><img src="img/FotoPlato11.png" alt="Imagen 11"></div>
-            <div><img src="img/FotoPlato12.png" alt="Imagen 12"></div>
+        <div class="kunfoot">
+            <h2>Echale un ojo a nuestras redes sociales</h2>
+            <div>
+                <a href="https://www.instagram.com/restaurante_casa_obdulia/?hl=es"><img src="img/instagram_Icon.png"
+                        alt="instagram"></a>
+                <a href="https://www.latest.facebook.com/pages/Casa-Obdulia/410417532497618"><img
+                        src="img/facebook_Icon.png" alt="facebook"></a>
+                <a href="https://www.thefork.es/restaurante/casa-obdulia-r488737"><img src="img/thefork_Icon.png"
+                        alt="thefork"></a>
+            </div>
         </div>
-
     </section>
+    <div class="slider platos">
+        <div><img src="img/FotoPlato2.png" alt="Imagen 1"></div>
+        <div><img src="img/FotoPlato3.png" alt="Imagen 2"></div>
+        <div><img src="img/FotoPlato4.png" alt="Imagen 4"></div>
+        <div><img src="img/FotoPlato6.png" alt="Imagen 6"></div>
+        <div><img src="img/FotoPlato7.png" alt="Imagen 7"></div>
+        <div><img src="img/FotoPlato8.png" alt="Imagen 8"></div>
+        <div><img src="img/FotoPlato5.png" alt="Imagen 5"></div>
+        <div><img src="img/FotoPlato10.png" alt="Imagen 10"></div>
+        <div><img src="img/FotoPlato11.png" alt="Imagen 11"></div>
+        <div><img src="img/FotoPlato12.png" alt="Imagen 12"></div>
+    </div>
 
-    <!-- SECCION SOCIAL (FOOTER PA LOS COLEGAS) -->
-    <!-- -------------------------------------------------------------------------------------- -->
-    <footer class="contenedor kunfoot">
-        <h2>Echale un ojo a nuestras redes sociales</h2>
-        <div>
-            <a href="https://www.instagram.com/restaurante_casa_obdulia/?hl=es"><img src="img/instagram_Icon.png"
-                    alt="instagram"></a>
-            <a href="https://www.latest.facebook.com/pages/Casa-Obdulia/410417532497618"><img
-                    src="img/facebook_Icon.png" alt="facebook"></a>
-            <a href="https://www.thefork.es/restaurante/casa-obdulia-r488737"><img src="img/thefork_Icon.png"
-                    alt="thefork"></a>
-        </div>
-    </footer>
     <script src="scripts.js"></script>
 </body>
 

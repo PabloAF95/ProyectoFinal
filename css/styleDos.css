@@ -1,40 +1,412 @@
-/* Estilos del navbar */
+/* Estilos base para todos los tamaños de pantalla */
+
+.contenedor {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+html {
+  background: #B4CFFA;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/* ------------------------------------------------ */
+
 .navbar {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.3s;
-    display: flex;
-    justify-content: center;
+  background-color: #dfa65d;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    /* flex-direction: column; */
+    align-items: center;
   }
-  
+
   .navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
+    margin: 5px 0;
   }
-  
-  /* Estilos para pantallas pequeñas */
-  @media screen and (max-width: 600px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .navbar a {
-      margin: 5px 0;
-    }
+}
+
+/* Estilos adicionales para mover el navbar al desplazarse */
+@media screen and (min-width: 601px) {
+  .navbar.scroll {
+    top: -80px;
   }
-  
-  /* Estilos adicionales para mover el navbar al desplazarse */
-  @media screen and (min-width: 601px) {
-    .navbar.scroll {
-      top: -80px;
-    }
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: rgb(226, 186, 8);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+  text-shadow: 4px 4px 8px rgb(0, 0, 0);
+  padding-top: 40px;
+  margin-top: 30px;
+}
+
+h5 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: rgb(218, 167, 0);
+  border-radius: 20px;
+}
+
+.cabesa {
+  background-size: cover;
+  background-repeat: none;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  header.cabesa {
+    text-align: center;
   }
-  
-  
-  
+
+  header.cabesa img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.textinfo {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  background-color: #F5E8C7;
+  flex-basis: 50%;
+  border: 1px solid black;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calendar {
+  width: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  flex-basis: 50%;
+  text-align: center;
+}
+
+/* Estilos para el encabezado del calendario */
+.calendar .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 100%;
+}
+
+/* Estilos para las flechas de cambio de mes */
+.calendar #prevBtn,
+.calendar #nextBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Estilos adicionales para las flechas de cambio de mes */
+.calendar #prevBtn {
+  margin-right: 10px;
+}
+
+.calendar #nextBtn {
+  margin-left: 10px;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: #6dd197;
+}
+
+@media screen and (max-width: 768px) {
+
+  .textinfo,
+  .calendar {
+    flex-basis: 100%;
+  }
+}
+
+
+
+/* Media queries para tamaños de pantalla pequeños (hasta 768px) */
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  .cabesa {
+    text-align: center;
+  }
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textinfo,
+  .calendar {
+    width: 100%;
+  }
+}
+
+/* Media queries para tamaños de pantalla medianos (769px a 1024px) */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contenedor {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .textinfo {
+    width: 50%;
+  }
+
+  .calendar {
+    width: 40%;
+  }
+}
+
+/* Media queries para tamaños de pantalla grandes (más de 1024px) */
+
+@media screen and (min-width: 1025px) {
+  .contenedor {
+    padding: 20px;
+  }
+
+  .info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .textinfo {
+    width: 60%;
+  }
+
+  .calendar {
+    width: 30%;
+  }
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.ubi::after {
+  content: url(../img/pin.png);
+}
+
+.call::after {
+  content: url(../img/call.png);
+}
+
+.reser::after {
+  content: url(../img/calendar.png);
+}
+
+.gluten::after {
+  content: url(../img/kitchen.png);
+}
+
+.close::after {
+  content: url(../img/not_disturb.png);
+}
+
+/* ESTILOS SECCION ALERGENOS */
+
+.alergenos {
+  background-color: #FAC0B5;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.alergenos h3 {
+  display: flex;
+  text-align: center;
+  font-size: 26px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(206, 159, 5);
+  border-radius: 16px;
+  flex-direction: column;
+}
+
+.GridAlergenos {
+  margin-left: 160px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.GridAlergenos img {
+  border-radius: 80px;
+}
+
+/*  MEDIA ESTILOS ALERGENOS ------------------------------------------------ */
+@media(max-width:768px) {
+  .GridAlergenos {
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2px;
+      margin: 0 auto;
+  }
+}
+
+@media(max-width:480px) {
+  .GridAlergenos {
+      width: 100%;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2px;
+      margin: 0 auto;
+  }
+}
+
+.extra {
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.extra div {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: #D0FAAD;
+}
+
+.extra h3 {
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.extra h3::before {
+  content: url(../img/infoicon.png);
+  padding-top: 40px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.extra p {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 400;
+}
+
+/* Estilos para el div "slider platos" */
+
+.platos {
+   margin-top: 10px;
+  padding-top: 20px;
+  border-top: 10px;
+  max-width: 22%;
+  flex-basis: 65%; /* Ajusta el ancho del div "slider platos" */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .contenedor {
+    flex-direction: column; /* Cambia a una disposición de columna en pantallas más pequeñas */
+  }
+
+  .extra,
+  .slider.platos {
+    flex-basis: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+  }
+}
+
+.kunfoot h2 {
+  text-align: center;
+  font-size: 36px;
+}
+.kunfoot div {
+  text-align: center;
+  font-size: 36px;
+  display: flex;
+  justify-content: space-around;
+}

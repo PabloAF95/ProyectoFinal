@@ -4,8 +4,6 @@
 
 html {
     background: #B4CFFA;
-    /* background: linear-gradient(180deg, #FFFFFF, #777777); */
-    box-sizing: border-box;
 }
 
 body img {
@@ -114,49 +112,42 @@ nav{
 
 /* NAV CON BOTONES BASICOS (FUNCIONAL)
     USA LA CLASE NAVBAR */
-
-.navbar {
-    font-family: var(--FuentePrincipal);
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 24px;
-    position: fixed;
-    margin-left: 340px;
-}
-
-.navbar div {
-    position: absolute;
-}
-
-.navbar a {
-    font-size: 18px;
-    color: var(--BaseColor);
-    background-color: rgba(255, 255, 255, 0.918);
-    padding: 8px;
-    border-radius: 8px;
-
-}
-
-.navbar a:hover {
-    color: white;
-    background-color: var(--BaseColor);
-}
-
-/* ------------------------------------------------------------------------------
-    @MEDIA ESTILOS NAVBAR */
-
-@media (max-width:1140px) {
     .navbar {
-        margin-left: 130px;
-    }
-}
-
-@media (max-width:768px) {
-    .navbar {
-        margin-left: 20px;
-    }
-}
-
+        background-color: #dfa65d;
+        color: #fff;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        transition: top 0.3s;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 20px;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .navbar {
+          /* flex-direction: column; */
+          align-items: center;
+        }
+      
+        .navbar a {
+          margin: 5px 0;
+        }
+      }
+      
+      /* Estilos adicionales para mover el navbar al desplazarse */
+      @media screen and (min-width: 601px) {
+        .navbar.scroll {
+          top: -80px;
+        }
+      }
 /* ------------------------------------------------------------------------------ */
 
 /* ESTILOS HEADER (CABESA) */
