@@ -10,10 +10,10 @@ html {
   background: #B4CFFA;
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
-}
+} */
 
 *,
 *::after,
@@ -105,7 +105,7 @@ h5 {
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 42px;
   }
 }
 
@@ -185,11 +185,7 @@ td {
 /* Media queries para tamaños de pantalla pequeños (hasta 768px) */
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: 24px;
-  }
-
-  .cabesa {
+   .cabesa {
     text-align: center;
   }
 
@@ -199,7 +195,9 @@ td {
     align-items: center;
     text-align: center;
   }
-
+.textinfo{
+  position: center;
+}
   .textinfo,
   .calendar {
     width: 80%;
@@ -320,19 +318,19 @@ td {
 @media(max-width:1100px) {
   .GridAlergenos {
     width: 100%;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 2px;
       margin: 0 auto;
   }
 }
 
-@media(max-width:900px) {
+@media(max-width:680px) {
   .GridAlergenos {
       width: 100%;
       padding-left: 20px;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr ;
       gap: 2px;
       margin: 0 auto;
   }
