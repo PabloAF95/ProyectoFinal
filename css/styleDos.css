@@ -288,6 +288,7 @@ td {
 
 
 .alergia{
+
   display: flex;
   justify-content: center;
   padding: 1px 0;
@@ -295,6 +296,9 @@ td {
   font-size: 26px;
   background-color: #dfa65d;
   color: rgb(255, 255, 255);
+}
+.alergia h3{
+    line-height: 1px;
 }
 
 .GridAlergenos {
