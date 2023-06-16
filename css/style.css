@@ -232,14 +232,16 @@ h5 {
     border-radius: 20px;
 }
 
-.infohistoria h2 {
+h2 {
+    background-color: #dfa65d;
     text-align: center;
     font-size: 32px;
     font-weight: 600;
     text-decoration: underline;
 }
 
-.infohistoria h3 {
+h3 {
+    background: #D0FAAD;
     justify-content: center;
     text-align: center;
     font-size: 26px;
