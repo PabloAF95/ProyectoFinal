@@ -1,7 +1,7 @@
 /* Estilos base para todos los tamaños de pantalla */
 
 .contenedor {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -44,7 +44,7 @@ html {
 
 @media screen and (max-width: 800px) {
   .navbar {
-   
+
     align-items: center;
   }
 
@@ -67,17 +67,16 @@ html {
 
 h1 {
   color: rgb(226, 186, 8);
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 80px;
   font-weight: 800;
   text-align: center;
   text-shadow: 4px 4px 8px rgb(0, 0, 0);
   padding-top: 40px;
   margin-top: 30px;
+  padding-right: 100px;
 }
 
 h5 {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 30px;
   font-weight: 500;
   text-align: center;
@@ -100,12 +99,17 @@ h5 {
   }
 
   header.cabesa img {
+    width: 100%;
     max-width: 100%;
     height: auto;
   }
 
+  img {
+    width: 100%;
+  }
+
   h1 {
-    font-size: 42px;
+    font-size: 36px;
   }
 }
 
@@ -113,6 +117,60 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.calendar-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+}
+
+.calendar {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  padding-right: 64px;
+  font-family: Arial, sans-serif;
+}
+
+.month {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.weekday {
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 5px;
+  flex-basis: calc(100% / 7);
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 9px;
+}
+
+.day {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.empty {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .textinfo {
@@ -129,15 +187,15 @@ h5 {
   padding: 20px;
 }
 
+/* 
 .calendar {
-  width: 300px;
+  width: auto;
   font-family: Arial, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   flex-basis: 50%;
   text-align: center;
 }
 
-/* Estilos para el encabezado del calendario */
 .calendar .header {
   display: flex;
   justify-content: center;
@@ -148,16 +206,14 @@ table {
   width: 100%;
 }
 
-/* Estilos para las flechas de cambio de mes */
 .calendar #prevBtn,
 .calendar #nextBtn {
   border: none;
   background-color: transparent;
-  font-size: 18px;
+  font-size: 10px;
   cursor: pointer;
 }
 
-/* Estilos adicionales para las flechas de cambio de mes */
 .calendar #prevBtn {
   margin-right: 10px;
 }
@@ -180,12 +236,21 @@ td {
 .selected {
   background-color: #6dd197;
 }
-
+ */
 
 /* Media queries para tamaños de pantalla pequeños (hasta 768px) */
 
 @media screen and (max-width: 768px) {
-   .cabesa {
+  section {
+    width: 100%;
+    /* Establece el ancho de la sección al 100% de su contenedor */
+    padding: 10x;
+    /* Asegura que no haya relleno en la sección */
+    margin: 0;
+    /* Asegura que no haya margen en la sección */
+  }
+
+  .cabesa {
     text-align: center;
   }
 
@@ -195,12 +260,13 @@ td {
     align-items: center;
     text-align: center;
   }
-.textinfo{
-  position: center;
-}
-  .textinfo,
-  .calendar {
-    width: 80%;
+
+  .textinfo {
+    position: center;
+  }
+
+  .textinfo {
+    width: auto;
   }
 }
 
@@ -212,7 +278,7 @@ td {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 44px;
   }
 
   .info {
@@ -226,9 +292,9 @@ td {
     width: 80%;
   }
 
-  .calendar {
-    width: 80%;
-  }
+  /* .calendar {
+    width: auto;
+  } */
 }
 
 /* Media queries para tamaños de pantalla grandes (más de 1024px) */
@@ -249,9 +315,9 @@ td {
     width: 80%;
   }
 
-  .calendar {
-    width: 80%;
-  }
+  /* .calendar {
+    width: auto;
+  } */
 }
 
 .zoom {
@@ -285,8 +351,7 @@ td {
 /* ESTILOS SECCION ALERGENOS */
 
 
-.alergia{
-
+.alergia {
   display: flex;
   justify-content: center;
   padding: 1px 0;
@@ -295,8 +360,16 @@ td {
   background-color: #dfa65d;
   color: rgb(255, 255, 255);
 }
-.alergia h3{
-    line-height: 1px;
+
+.alergia h3 {
+  line-height: 1px;
+}
+.grid-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAC0B5;
 }
 
 .GridAlergenos {
@@ -318,30 +391,39 @@ td {
 @media(max-width:1100px) {
   .GridAlergenos {
     width: 100%;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 2px;
-      margin: 0 auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    margin: 0 auto;
   }
 }
 
 @media(max-width:680px) {
-  .GridAlergenos {
-      width: 100%;
-      padding-left: 20px;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr ;
-      gap: 2px;
-      margin: 0 auto;
+  section {
+    width: 100%;
+    /* Establece el ancho de la sección al 100% de su contenedor */
+    padding: 0;
+    /* Asegura que no haya relleno en la sección */
+    margin: 0;
+    /* Asegura que no haya margen en la sección */
   }
- .alergia{
-  display: block;
-      font-size: 20pxpx;
- }
+
+  .GridAlergenos {
+    width: 100%;
+    padding-left: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 0 auto;
+  }
+
+  .alergia {
+    display: block;
+    font-size: 20pxpx;
+  }
 }
 
 .extra {
-  flex-basis: 30%;
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -378,17 +460,38 @@ td {
 
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .contenedor {
-    margin: 0 0;
-    flex-direction: column; 
+  section {
+    width: 100%;
+    /* Establece el ancho de la sección al 100% de su contenedor */
+    padding: 0;
+    /* Asegura que no haya relleno en la sección */
+    margin: 0;
+    /* Asegura que no haya margen en la sección */
   }
 
+  header {
+    width: 100%;
+    /* Establece el ancho del div al 100% de su contenedor */
+    padding: 0;
+    /* Asegura que no haya relleno en el div */
+    margin: 0;
+    /* Asegura que no haya margen en el div */
+  }
+
+  /* Estilos para la imagen dentro del div del encabezado */
+  header img {
+    width: 100%;
+    /* Establece el ancho de la imagen al 100% del div */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
+  }
 }
 
 .kunfoot h2 {
   text-align: center;
   font-size: 36px;
 }
+
 .kunfoot div {
   text-align: center;
   font-size: 36px;
@@ -396,7 +499,7 @@ td {
   justify-content: space-around;
 }
 
-.Gridplatos{
+.Gridplatos {
   background-color: #F5E8C7;
   padding-top: 40px;
   padding-left: 160px;
@@ -405,39 +508,63 @@ td {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  
+
 }
 
-.Gridplatos img{
+.Gridplatos img {
   border-radius: 10px;
 }
 
 @media(max-width:1100px) {
   .Gridplatos {
     padding-left: 100px;
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-      margin: 0 auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin: 0 auto;
+  }
+
+  header {
+    width: 100%;
+    /* Establece el ancho del div al 100% de su contenedor */
+    padding: 0;
+    /* Asegura que no haya relleno en el div */
+    margin: 0;
+    /* Asegura que no haya margen en el div */
+  }
+
+  /* Estilos para la imagen dentro del div del encabezado */
+  header img {
+    width: 100%;
+    /* Establece el ancho de la imagen al 100% del div */
+    height: auto;
+    /* Mantiene la proporción de aspecto */
   }
 }
 
 @media(max-width:960px) {
   .Gridplatos {
     padding-left: none;
-      width: 100%;
-      display:flex;
-      flex-wrap: wrap;
-      gap: 2px;
-      margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 0 10;
   }
 }
 
-h4{
-  line-height:60px;
+h4 {
+  line-height: 60px;
   font-size: 30px;
   font-weight: 500;
   text-align: center;
+  background: fixed;
   background-color: #dfa65d;
   color: rgb(255, 255, 255);
+}
+
+.amas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

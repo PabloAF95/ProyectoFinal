@@ -12,8 +12,8 @@
     <link rel="preload" href="css/normalize.css" as="style">
     <link href="css/normalize.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" /> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
@@ -49,10 +49,10 @@
 
     <!-- SECCION INFO (TEXTINFO + INFOTO) -->
     <h5>¿Buscando un lugar para comer o cenar en Vigo? <br>
-                Entonces estás en el lugar indicado</h5>
+        Entonces estás en el lugar indicado</h5>
 
-    <section class="contenedor">
-        <div class="info">
+    <section>
+        <div class="contenedor info">
 
             <div class="textinfo">
                 <p class="ubi"><br> Estamos en <b><a
@@ -62,7 +62,7 @@
 
                 <p>Nuestro número de teléfono es el <a href="tel:+34986452630"><b class="call">986 45 26 30 </b></a>
                     <br>
-                    <br> También puedes hacer una reserva desde
+                    <br> Puedes hacer una reserva desde
                     <a class="reser"
                         href="https://www.thefork.es/restaurante/casa-obdulia-r488737#booking="><b>thefork.es </b>
                     </a>
@@ -79,7 +79,11 @@
 
             </div>
 
-            <div class="calendar contenedor">
+
+        </div>
+        
+
+            <!-- <div class="calendar contenedor">
                 <div class="header">
                     <button id="prevBtn">&lt;</button>
                     <h2 id="monthYear"></h2>
@@ -87,17 +91,17 @@
                 </div>
                 <table>
                     <thead>
-                        <!-- La etiqueta <thead> en HTML es utilizada 
+                       La etiqueta <thead> en HTML es utilizada 
                             para definir un bloque que contiene las celdas 
                             de encabezado de una tabla. El contenido dentro 
                             de esta etiqueta se considera como un encabezado 
                             de tabla y se utiliza para describir el contenido 
-                            de las columnas de la tabla. -->
+                            de las columnas de la tabla.
                         <tr>
-                            <!-- La etiqueta <tr> en HTML representa una fila en una tabla.
+                            La etiqueta <tr> en HTML representa una fila en una tabla.
                                 Es utilizada dentro de una etiqueta <table> para definir una fila de celdas,
                                 las cuales son contenidas dentro de etiquetas <td> o <th>
-                                (que representan una celda de datos o una celda de encabezado, respectivamente). -->
+                                (que representan una celda de datos o una celda de encabezado, respectivamente).
                             <th>Domingo</th>
                             <th>Lunes</th>
                             <th>Martes</th>
@@ -108,13 +112,10 @@
                         </tr>
                     </thead>
                     <tbody id="calendarBody">
-                        <!-- El elemento <tbody> delimita las otras partes del contenido de la tabla que no están en el encabezado o en el pie de página de la tabla. Aparecerá debajo del encabezado de la tabla o, a veces, en el pie de página, según cómo hayas decidido estructurarlo. -->
-
-                    </tbody>
-
+                        El elemento <tbody> delimita las otras partes del contenido de la tabla que no están en el encabezado o en el pie de página de la tabla. Aparecerá debajo del encabezado de la tabla o, a veces, en el pie de página, según cómo hayas decidido estructurarlo.                     </tbody>
                 </table>
+            </div> -->
 
-            </div>
             <!-- https://lenguajecss.com/css/modelo-de-cajas/bordes-imagenes/  ¡¡IDEA!!-->
         </div>
 
@@ -137,40 +138,42 @@
     </div>
 
     <!-- SECCION ALERGENOS -->
-    <section> <div class="alergia">
-        <h3>¿Tienes alergia a algo?</h3> &nbsp; <h3>No dudes en avisarnos</h3>
-    </div>
+    <section>
+        <div class="alergia">
+            <h3>¿Tienes alergia a algo?</h3> &nbsp; <h3>No dudes en avisarnos</h3>
+        </div>
 
-    <div class="GridAlergenos">
+        <div class="GridAlergenos">
+            <img class="zoom" src="img/Alcohol.png" alt="Alcohol">
+            <img class="zoom" src="img/Moluscos.png" alt="Moluscos">
+            <img class="zoom" src="img/Soja.png" alt="Soja">
+            <img class="zoom" src="img/Nueces.png" alt="Nueces">
+            <img class="zoom" src="img/Maiz.png" alt="Maiz">
+            <img class="zoom" src="img/Pescado.png" alt="Pescado">
+            <img class="zoom" src="img/Vegano.png" alt="Vegano">
+            <img class="zoom" src="img/Cacahuetes.png" alt="Cacahuetes">
+            <img class="zoom" src="img/Marisco.png" alt="Marisco">
+            <img class="zoom" src="img/Aves.png" alt="Aves">
+            <img class="zoom" src="img/Cerdo.png" alt="Cerdo">
+            <img class="zoom" src="img/Lactosa.png" alt="Lactosa">
+            <img class="zoom" src="img/Azucar.png" alt="Azucar">
+            <img class="zoom" src="img/Mostaza.png" alt="Mostaza">
+            <img class="zoom" src="img/Gluten.png" alt="Gluten">
+            <img class="zoom" src="img/Huevos.png" alt="Huevos">
+            <img class="zoom" src="img/Celery.png" alt="Celery">
+            <img class="zoom" src="img/GrasasTrans.png" alt="GrasasTrans">
+            <img class="zoom" src="img/Sulphites.png" alt="Sulphites">
+            <img class="zoom" src="img/GMO.png" alt="GMO">
+        </div>
+            
 
-        <img class="zoom" src="img/Alcohol.png" alt="Alcohol">
-        <img class="zoom" src="img/Moluscos.png" alt="Moluscos">
-        <img class="zoom" src="img/Soja.png" alt="Soja">
-        <img class="zoom" src="img/Nueces.png" alt="Nueces">
-        <img class="zoom" src="img/Maiz.png" alt="Maiz">
-        <img class="zoom" src="img/Pescado.png" alt="Pescado">
-        <img class="zoom" src="img/Vegano.png" alt="Vegano">
-        <img class="zoom" src="img/Cacahuetes.png" alt="Cacahuetes">
-        <img class="zoom" src="img/Marisco.png" alt="Marisco">
-        <img class="zoom" src="img/Aves.png" alt="Aves">
-        <img class="zoom" src="img/Cerdo.png" alt="Cerdo">
-        <img class="zoom" src="img/Lactosa.png" alt="Lactosa">
-        <img class="zoom" src="img/Azucar.png" alt="Azucar">
-        <img class="zoom" src="img/Mostaza.png" alt="Mostaza">
-        <img class="zoom" src="img/Gluten.png" alt="Gluten">
-        <img class="zoom" src="img/Huevos.png" alt="Huevos">
-        <img class="zoom" src="img/Celery.png" alt="Celery">
-        <img class="zoom" src="img/GrasasTrans.png" alt="GrasasTrans">
-        <img class="zoom" src="img/Sulphites.png" alt="Sulphites">
-        <img class="zoom" src="img/GMO.png" alt="GMO">
+        </div>
+    </section>
 
-    </div>
-</section>
-   
     <!-- SECCION DE IMAGENES (PLATOS) -->
     <!-- <section class="contenedor platos"> -->
 
-        <!-- <div > 
+    <!-- <div > 
 
     // Este era el primer modelo de slider solo con css, pero por alguna razon ahora falla, asi que queda descartado.
 
@@ -210,7 +213,7 @@
     <!-- </section> -->
 
     <!-- SECCION EXTRA (MAS INFORMACION RELACIONADA CON EL LOCAL) -->
-    <section class="contenedor">
+    <section class="contenedor amas">
 
         <div class="extra">
             <div>
@@ -230,6 +233,59 @@
                 </div>
             </div>
         </div>
+
+        <div class="calendar-wrapper">
+            <div class="calendar">
+                <div class="month">Junio</div>
+                <div class="weekdays">
+                    <div class="weekday">Dom</div>
+                    <div class="weekday">Lun</div>
+                    <div class="weekday">Mar</div>
+                    <div class="weekday">Mie</div>
+                    <div class="weekday">Jue</div>
+                    <div class="weekday">Vie</div>
+                    <div class="weekday">Sab</div>
+                </div>
+                <div class="days">
+                    <div class="day empty"></div>
+                    <div class="day empty"></div>
+                    <div class="day empty"></div>
+                    <div class="day">1</div>
+                    <div class="day">2</div>
+                    <div class="day">3</div>
+                    <div class="day">4</div>
+                    <div class="day">5</div>
+                    <div class="day">6</div>
+                    <div class="day">7</div>
+                    <div class="day">8</div>
+                    <div class="day">9</div>
+                    <div class="day">10</div>
+                    <div class="day">11</div>
+                    <div class="day">12</div>
+                    <div class="day">13</div>
+                    <div class="day">14</div>
+                    <div class="day">15</div>
+                    <div class="day">16</div>
+                    <div class="day">17</div>
+                    <div class="day">18</div>
+                    <div class="day">19</div>
+                    <div class="day">20</div>
+                    <div class="day">21</div>
+                    <div class="day">22</div>
+                    <div class="day">23</div>
+                    <div class="day">24</div>
+                    <div class="day">25</div>
+                    <div class="day">26</div>
+                    <div class="day">27</div>
+                    <div class="day">28</div>
+                    <div class="day">29</div>
+                    <div class="day">30</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
         <div class="kunfoot">
             <h2>Echale un ojo a nuestras redes sociales</h2>
             <div>
@@ -240,10 +296,9 @@
                 <a href="https://www.thefork.es/restaurante/casa-obdulia-r488737"><img src="img/thefork_Icon.png"
                         alt="thefork"></a>
             </div>
-        </div>
-    </section>
+    </footer>
 
-    <script src="scripts.js"></script>
+    <!-- <script src="scripts.js"></script> -->
 </body>
 
 </html>
