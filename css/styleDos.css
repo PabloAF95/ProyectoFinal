@@ -1,5 +1,7 @@
 /* Estilos base para todos los tamaños de pantalla */
-
+a{
+  text-decoration: none;
+}
 .contenedor {
   width: 100%;
   margin: 0 auto;
@@ -10,10 +12,10 @@ html {
   background: #B4CFFA;
 }
 
-/* body {
+body {
   margin: 0;
   padding: 0;
-} */
+} 
 
 *,
 *::after,
@@ -44,25 +46,17 @@ html {
 
 @media screen and (max-width: 800px) {
   .navbar {
-
+    position: absolute;
     align-items: center;
   }
 
-  .navbar a {
-    margin: 5px 0;
-  }
 }
 
 /* Estilos adicionales para mover el navbar al desplazarse */
-@media screen and (min-width: 501px) {
+@media screen and (max-width: 400px) {
   .navbar.scroll {
     top: -80px;
   }
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 h1 {
@@ -73,15 +67,12 @@ h1 {
   text-shadow: 4px 4px 8px rgb(0, 0, 0);
   padding-top: 40px;
   margin-top: 30px;
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 
-h5 {
-  font-size: 30px;
-  font-weight: 500;
+.header {
   text-align: center;
-  background-color: #dfa65d;
-  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
 }
 
 .cabesa {
@@ -93,19 +84,29 @@ h5 {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 768px) {
+h5 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #dfa65d;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
   header.cabesa {
     text-align: center;
   }
 
   header.cabesa img {
-    width: 100%;
+    width: 95%;
     max-width: 100%;
-    height: auto;
+    /* height: auto; */
+   align-items: center;
+   justify-self: center;
   }
 
   img {
-    width: 100%;
+    width: 95%;
   }
 
   h1 {
@@ -119,12 +120,12 @@ h5 {
   justify-content: space-between;
 }
 
-.calendar-wrapper {
+/* .calendar-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 270px;
-}
+} */
 
 .calendar {
   width: 200px;
@@ -272,7 +273,7 @@ td {
 
 /* Media queries para tamaños de pantalla medianos (769px a 1024px) */
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 800px) and (max-width: 1024px) {
   .contenedor {
     padding: 10px;
   }
@@ -364,17 +365,11 @@ td {
 .alergia h3 {
   line-height: 1px;
 }
-.grid-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FAC0B5;
-}
 
 .GridAlergenos {
   background-color: #FAC0B5;
-  padding-left: 160px;
+  padding-left: 76px;
+  padding-right: 76px;
   padding-top: 32px;
   padding-bottom: 32px;
   display: grid;
@@ -384,29 +379,22 @@ td {
 }
 
 .GridAlergenos img {
-  border-radius: 80px;
+  border-radius: 100px;
 }
 
 /*  MEDIA ESTILOS ALERGENOS ------------------------------------------------ */
-@media(max-width:1100px) {
+@media(max-width:800px) {
   .GridAlergenos {
-    width: 100%;
+    width: 80%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     margin: 0 auto;
   }
 }
 
 @media(max-width:680px) {
-  section {
-    width: 100%;
-    /* Establece el ancho de la sección al 100% de su contenedor */
-    padding: 0;
-    /* Asegura que no haya relleno en la sección */
-    margin: 0;
-    /* Asegura que no haya margen en la sección */
-  }
+
 
   .GridAlergenos {
     width: 100%;
@@ -502,10 +490,10 @@ td {
 .Gridplatos {
   background-color: #F5E8C7;
   padding-top: 40px;
-  padding-left: 160px;
+  /* padding-left: 160px; */
   padding-bottom: 40px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 
@@ -515,9 +503,10 @@ td {
   border-radius: 10px;
 }
 
-@media(max-width:1100px) {
+@media(max-width:800px) {
   .Gridplatos {
     padding-left: 100px;
+    padding-right: 100px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 2px;
@@ -543,14 +532,14 @@ td {
 }
 
 @media(max-width:960px) {
-  .Gridplatos {
+  /* .Gridplatos {
     padding-left: none;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 2px;
     margin: 0 10;
-  }
+  } */
 }
 
 h4 {
