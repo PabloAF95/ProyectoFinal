@@ -3,7 +3,7 @@
 /* ESTILOS BASICOS DE LA PAGINA */
 
 html {
-    background: #B4CFFA;
+    background-image: url(/img/CartaCasaObduliaFondo.png);
 }
 
 body img {
@@ -16,9 +16,8 @@ body img {
 }
 
 .contenedorancho {
-    width: 78%;
-    margin: 20px auto;
-    border-radius: 10px;
+    width: 80%;
+    margin: auto;
 }
 
 .divhorizontal {
@@ -40,10 +39,10 @@ a {
     justify-content: center;
 }
 
-img {
+body img {
     display: flex;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -102,7 +101,7 @@ nav{
 /* NAV CON BOTONES BASICOS (FUNCIONAL)
     USA LA CLASE NAVBAR */
     .navbar {
-        background-color: #dfa65d;
+        background-color: #8a8a8a;
         color: #fff;
         padding: 10px;
         position: fixed;
@@ -155,14 +154,15 @@ nav{
 /* ESTILOS DE ENCABEZADOS ( H1 a H6 ) */
 
 h1 {
-    color: rgb(226, 186, 8);
+    color: rgb(225, 225, 225);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 80px;
     font-weight: 800;
     text-align: center;
-    text-shadow: 4px 4px 8px rgb(0, 0, 0);
-    padding-top: 40px;
-    margin-top: 30px;
+    /* text-shadow: 4px 4px 8px rgb(169, 188, 197); */
+    background-color: #333333;
+    padding-top: 20px;
+    margin-top: 20px;
 }
 
 h5 {
@@ -170,8 +170,8 @@ h5 {
     font-size: 30px;
     font-weight: 500;
     text-align: center;
-    background-color: rgb(0, 0, 0);
-    color: rgb(218, 167, 0);
+    background-color: #333333;
+    color: rgb(221, 221, 221);
     border-radius: 20px;
     border-width: fit-content;
 }
@@ -211,10 +211,12 @@ h2 {
     font-size: 32px;
     font-weight: 600;
     text-decoration: underline;
+    background-color: #333333;
+    color: #ececec;
 }
 
 h3 {
-    background: #D0FAAD;
+    background: #b9cfd4;
     justify-content: center;
     text-align: center;
     font-size: 26px;

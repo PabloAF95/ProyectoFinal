@@ -11,7 +11,7 @@ a{
 }
 
 html {
-  background: #ffffff;
+  background-image: url(/img/CartaCasaObduliaFondo.png);
 }
 
 body {
@@ -28,12 +28,10 @@ body {
 /* ------------------------------------------------ */
 
 .navbar {
-  background-color: #dfa65d;
+  background-color: #8a8a8a;
   color: #fff;
-  /* padding: 10px; */
   width: 100%;
   top: 0;
-  /* transition: top 0.3s; */
   display: flex;
   justify-content: space-around;
 }
@@ -46,13 +44,14 @@ body {
 }
 
 h1 {
-  color: rgb(38, 97, 207);
+  background-color: #333333;
+  color: rgb(243, 243, 243);
   font-size: 80px;
   font-weight: 800;
   text-align: center;
   text-shadow: 4px 4px 8px rgb(90, 90, 90);
-  padding-top: 40px;
-  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
  
 }
 
@@ -68,13 +67,12 @@ h5 {
   font-size: 30px;
   font-weight: 500;
   text-align: center;
-  background-color: #dfa65d;
+  background-color: #333333;
   color: rgb(255, 255, 255);
+  padding: 10px 0;
 }
 
-
-
-.calendar {
+/* .calendar {
   width: 200px;
   border: 1px solid #ccc;
   padding: 10px;
@@ -119,7 +117,7 @@ h5 {
 .empty {
   width: 100%;
   box-sizing: border-box;
-}
+} */
 
 .textinfo {
   text-align: center;
@@ -127,13 +125,13 @@ h5 {
   font-size: 22px;
   font-weight: 500;
   color: rgb(0, 0, 0);
-  background-color: #F5E8C7;
+  background-color: #ebebeb;
   border: 1px solid black;
   min-width: 360px;
   padding: 10px;
 }
 
-/* .calendar {     // Calendario JS
+.calendar {    
   width: auto;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -190,6 +188,11 @@ td {
   transform: scale(1.2);
 }
 
+.contenedorancho {
+  width: 60%;
+  margin: 20px;
+}
+
 /* .ubi::after {
   content: url(../img/pin.png);
 }
@@ -218,7 +221,7 @@ td {
   padding: 1px 0;
   text-align: center;
   font-size: 26px;
-  background-color: #dfa65d;
+  background-color: #333333;
   color: rgb(255, 255, 255);
 }
 
@@ -227,7 +230,7 @@ td {
 }
 
 .GridAlergenos {
-  background-color: #FAC0B5;
+  background-color: #bfcfd5;
   padding: 77px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -252,7 +255,7 @@ td {
   border: 2px solid black;
   border-radius: 5px;
   padding: 3px;
-  background-color: #D0FAAD;
+  background-color: #e5e5e5;
 }
 
 .extra h3 {
@@ -277,7 +280,7 @@ td {
 }
 
 .Gridplatos {
-  background-color: #F5E8C7;
+  /* background-color: #F5E8C7; */
   padding-top: 40px;
   padding-bottom: 40px;
   display: grid;
@@ -353,6 +356,7 @@ td {
   section{
     margin: none;
   }
+
   div{
     margin: none;
   }
@@ -379,7 +383,7 @@ h4 {
   font-weight: 500;
   text-align: center;
   background: fixed;
-  background-color: #dfa65d;
+  background-color: #333333;
   color: rgb(255, 255, 255);
 }
 
@@ -390,18 +394,19 @@ h4 {
 }
 
 .kunfoot h2 {
+  color: #ccc;
+  background-color: #333333;
   text-align: center;
   font-size: 36px;
 }
 
 .kunfoot div {
+
   text-align: center;
   font-size: 36px;
   display: flex;
   justify-content: space-around;
 }
-
-
 
 @media(max-width:680px) {
   section{
