@@ -487,3 +487,29 @@ h4 {
     grid-template-columns: 1fr 1fr 1fr ;
   }
 }
+
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  animation: slideAnimation 10s linear infinite;
+}
+
+.carousel-slide img {
+  margin-right: 10px;
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
