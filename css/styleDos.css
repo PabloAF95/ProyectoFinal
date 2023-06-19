@@ -1,19 +1,21 @@
 /* Estilos base para todos los tamaños de pantalla */
+section{
+  margin: auto;
+}
 a{
   text-decoration: none;
 }
 .contenedor {
   width: 100%;
-  margin: 0 auto;
-  padding: 20px;
+  margin: auto;
 }
 
 html {
-  background: #B4CFFA;
+  background: #ffeac3;
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
 } 
 
@@ -28,11 +30,10 @@ body {
 .navbar {
   background-color: #dfa65d;
   color: #fff;
-  padding: 10px;
-  position: fixed;
+  /* padding: 10px; */
   width: 100%;
   top: 0;
-  transition: top 0.3s;
+  /* transition: top 0.3s; */
   display: flex;
   justify-content: space-around;
 }
@@ -40,48 +41,27 @@ body {
 .navbar a {
   color: #fff;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 10px 0 0;
   font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
-  .navbar {
-    position: absolute;
-    align-items: center;
-  }
-
-}
-
-/* Estilos adicionales para mover el navbar al desplazarse */
-@media screen and (max-width: 400px) {
-  .navbar.scroll {
-    top: -80px;
-  }
-}
-
 h1 {
-  color: rgb(226, 186, 8);
+  color: rgb(14, 14, 14);
   font-size: 80px;
   font-weight: 800;
   text-align: center;
-  text-shadow: 4px 4px 8px rgb(0, 0, 0);
+  text-shadow: 4px 4px 8px rgb(90, 90, 90);
   padding-top: 40px;
   margin-top: 30px;
-  /* padding-right: 100px; */
+ 
 }
 
 .header {
   text-align: center;
-  margin-bottom: 10px;
-}
-
-.cabesa {
-  background-size: cover;
+   background-size: cover;
   background-repeat: none;
-  max-width: 100%;
-  display: flex;
   justify-content: center;
-  margin-bottom: 15px;
+  margin-left: 10px;
 }
 
 h5 {
@@ -92,40 +72,7 @@ h5 {
   color: rgb(255, 255, 255);
 }
 
-@media screen and (max-width: 800px) {
-  header.cabesa {
-    text-align: center;
-  }
 
-  header.cabesa img {
-    width: 95%;
-    max-width: 100%;
-    /* height: auto; */
-   align-items: center;
-   justify-self: center;
-  }
-
-  img {
-    width: 95%;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-}
-
-.info {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* .calendar-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 270px;
-} */
 
 .calendar {
   width: 200px;
@@ -181,15 +128,12 @@ h5 {
   font-weight: 500;
   color: rgb(0, 0, 0);
   background-color: #F5E8C7;
-  flex-basis: 50%;
   border: 1px solid black;
-  min-width: 300px;
-  margin: 0 auto;
-  padding: 20px;
+  min-width: 360px;
+  padding: 10px;
 }
 
-/* 
-.calendar {
+/* .calendar {     // Calendario JS
   width: auto;
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -238,89 +182,6 @@ td {
   background-color: #6dd197;
 }
  */
-
-/* Media queries para tamaños de pantalla pequeños (hasta 768px) */
-
-@media screen and (max-width: 768px) {
-  section {
-    width: 100%;
-    /* Establece el ancho de la sección al 100% de su contenedor */
-    padding: 10x;
-    /* Asegura que no haya relleno en la sección */
-    margin: 0;
-    /* Asegura que no haya margen en la sección */
-  }
-
-  .cabesa {
-    text-align: center;
-  }
-
-  .info {
-    width: 480px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .textinfo {
-    position: center;
-  }
-
-  .textinfo {
-    width: auto;
-  }
-}
-
-/* Media queries para tamaños de pantalla medianos (769px a 1024px) */
-
-@media screen and (min-width: 800px) and (max-width: 1024px) {
-  .contenedor {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 44px;
-  }
-
-  .info {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .textinfo {
-    width: 80%;
-  }
-
-  /* .calendar {
-    width: auto;
-  } */
-}
-
-/* Media queries para tamaños de pantalla grandes (más de 1024px) */
-
-@media screen and (min-width: 1025px) {
-  .contenedor {
-    padding: 20px;
-  }
-
-  .info {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .textinfo {
-    width: 80%;
-  }
-
-  /* .calendar {
-    width: auto;
-  } */
-}
-
 .zoom {
   transition: transform .2s;
 }
@@ -329,7 +190,7 @@ td {
   transform: scale(1.2);
 }
 
-.ubi::after {
+/* .ubi::after {
   content: url(../img/pin.png);
 }
 
@@ -347,10 +208,9 @@ td {
 
 .close::after {
   content: url(../img/not_disturb.png);
-}
+} */
 
 /* ESTILOS SECCION ALERGENOS */
-
 
 .alergia {
   display: flex;
@@ -368,10 +228,7 @@ td {
 
 .GridAlergenos {
   background-color: #FAC0B5;
-  padding-left: 76px;
-  padding-right: 76px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 77px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -379,37 +236,11 @@ td {
 }
 
 .GridAlergenos img {
+  width: 90%;
   border-radius: 100px;
 }
 
 /*  MEDIA ESTILOS ALERGENOS ------------------------------------------------ */
-@media(max-width:800px) {
-  .GridAlergenos {
-    width: 80%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2px;
-    margin: 0 auto;
-  }
-}
-
-@media(max-width:680px) {
-
-
-  .GridAlergenos {
-    width: 100%;
-    padding-left: 20px;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    margin: 0 auto;
-  }
-
-  .alergia {
-    display: block;
-    font-size: 20pxpx;
-  }
-}
 
 .extra {
   display: flex;
@@ -445,34 +276,117 @@ td {
   font-weight: 400;
 }
 
+.Gridplatos {
+  background-color: #F5E8C7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 
-/* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
+}
+
+.Gridplatos img {
+  width: 100%;
+  border-radius: 10px;
+}
+@media (max-width:1200px){
+
+  h1{
+    font-size: 44px;
+  }
+  
+}
+
+@media(max-width:800px) {
+  .navbar {
+    position: absolute;
+    align-items: center;
+  }
+
+  .info {
+    width: 480px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textinfo {
+    margin: auto;
+    position: center;
+     width: 60%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+ .GridAlergenos {
+    width: 80%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    margin: auto;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
   section {
     width: 100%;
-    /* Establece el ancho de la sección al 100% de su contenedor */
     padding: 0;
-    /* Asegura que no haya relleno en la sección */
-    margin: 0;
-    /* Asegura que no haya margen en la sección */
+    margin: auto;
+  }
+
+  header img {
+    width: 100%;
+  }
+
+  .Gridplatos {
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    margin:auto;
+  }
+  section{
+    margin: none;
+  }
+  div{
+    margin: none;
   }
 
   header {
     width: 100%;
-    /* Establece el ancho del div al 100% de su contenedor */
     padding: 0;
-    /* Asegura que no haya relleno en el div */
     margin: 0;
-    /* Asegura que no haya margen en el div */
   }
 
-  /* Estilos para la imagen dentro del div del encabezado */
-  header img {
-    width: 100%;
-    /* Establece el ancho de la imagen al 100% del div */
-    height: auto;
-    /* Mantiene la proporción de aspecto */
-  }
+  h1 {
+    font-size: 60px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+}
+
+h4 {
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  background: fixed;
+  background-color: #dfa65d;
+  color: rgb(255, 255, 255);
+}
+
+.mas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .kunfoot h2 {
@@ -487,73 +401,84 @@ td {
   justify-content: space-around;
 }
 
-.Gridplatos {
-  background-color: #F5E8C7;
-  padding-top: 40px;
-  /* padding-left: 160px; */
-  padding-bottom: 40px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
 
+
+@media(max-width:680px) {
+  section{
+    margin: auto;
+  }
+  .GridAlergenos {
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    margin:auto;
+  }
+
+  .alergia {
+    display: block;
+    font-size: 20px;
+  }
 }
 
-.Gridplatos img {
-  border-radius: 10px;
-}
-
-@media(max-width:800px) {
-  .Gridplatos {
-    padding-left: 100px;
-    padding-right: 100px;
+@media (max-width: 480px) {
+  .Gridplatos{
+    width: auto;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 2px;
-    margin: 0 auto;
   }
-
-  header {
+  .Gridplatos img{
     width: 100%;
-    /* Establece el ancho del div al 100% de su contenedor */
-    padding: 0;
-    /* Asegura que no haya relleno en el div */
-    margin: 0;
-    /* Asegura que no haya margen en el div */
   }
 
-  /* Estilos para la imagen dentro del div del encabezado */
+  .info{
+    width: 300px;
+  }
+
+  .textinfo{
+    min-width:none;
+  }
+
   header img {
-    width: 100%;
-    /* Establece el ancho de la imagen al 100% del div */
-    height: auto;
-    /* Mantiene la proporción de aspecto */
+   width: 95%;
+   align-items: center;
+   justify-self: center;
+   text-align: center;
   }
+
+  img {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 12px;
+  }
+  section{
+    margin: auto;
+  }
+.GridAlergenos{
+  padding: 0px;
+}
 }
 
-@media(max-width:960px) {
-  /* .Gridplatos {
-    padding-left: none;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2px;
-    margin: 0 10;
-  } */
+@media (max-width:300px){
+.textinfo{
+  min-width: fit-content;  
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+.contenedor{
+  margin:auto;
+  padding: auto;
+  
+}
 }
 
-h4 {
-  line-height: 60px;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  background: fixed;
-  background-color: #dfa65d;
-  color: rgb(255, 255, 255);
-}
-
-.amas{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (max-width:540px){
+  .GridAlergenos{
+    padding: 1%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
 }

@@ -7,7 +7,7 @@ html {
 }
 
 body img {
-    max-width: 100%;
+    width: 80%;
 }
 
 .contenedor {
@@ -50,21 +50,10 @@ img {
 /*---------------------------------------------------------------------------------
     @MEDIA ESTILOS BASICOS DE LA PAGINA*/
 
-@media(max-width:1140px) {
+@media(min-width:1100px) {
     .contenedor {
         width: 80%;
         margin: 0 auto;
-    }
-}
-
-@media(max-width:768px) {
-    .contenedor {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    .divhorizontal {
-        max-width: 90%;
     }
 }
 
@@ -131,7 +120,7 @@ nav{
         font-size: 20px;
       }
       
-      @media screen and (max-width: 600px) {
+      @media(max-width: 600px) {
         .navbar {
           flex-direction: column;
           align-items: center;
@@ -143,7 +132,7 @@ nav{
       }
       
       /* Estilos adicionales para mover el navbar al desplazarse */
-      @media screen and (min-width: 601px) {
+      @media(min-width: 601px) {
         .navbar.scroll {
           top: -80px;
         }
@@ -187,21 +176,6 @@ h5 {
     border-width: fit-content;
 }
 
-/* ---------------------------------------------------------------------------
-    @MEDIA ESTILOS DE ENCABEZADOS */
-
-@media(max-width:768px) {
-    h1 {
-        font-size: 60px;
-    }
-
-    h5 {
-        font-size: 20px;
-    }
-}
-
-/* --------------------------------------------------------------------------  */
-
 /* ESTILOS INFO */
 
 .info {
@@ -233,7 +207,6 @@ h5 {
 }
 
 h2 {
-    background-color: #dfa65d;
     text-align: center;
     font-size: 32px;
     font-weight: 600;
@@ -490,7 +463,7 @@ td {
 }
 
 .GridAlergenos {
-    margin-left: 160px;
+    padding-right: 160px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
