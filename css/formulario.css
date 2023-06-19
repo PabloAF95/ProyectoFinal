@@ -1,4 +1,9 @@
- a{
+html {
+  z-index: 1;
+  background-image: url(/img/CartaCasaObduliaFondo.png);
+}
+
+a{
     text-decoration: none;
   }
 
@@ -18,7 +23,13 @@
     font-size: 20px;
   }
 
+  .cuerpo{
+    z-index: 2;
+    background-color: #f0f0f0;
+  }
+
   h3{
+    text-decoration: underline;
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 30px;
