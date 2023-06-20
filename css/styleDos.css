@@ -282,17 +282,16 @@ td {
 .Gridplatos {
   /* background-color: #F5E8C7; */
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 30px;
+  
 
 }
 
 .Gridplatos img {
   width: 100%;
-  border-radius: 10px;
 }
 @media (max-width:1200px){
 
@@ -417,7 +416,7 @@ h4 {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
-    margin:auto;
+  
   }
 
   .alergia {
@@ -482,12 +481,18 @@ h4 {
 
 @media (max-width:540px){
   .GridAlergenos{
-    padding: 1%;
+    padding: 0%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr ;
+    margin:0 10px 0 0; 
   }
 }
 
+.GridAlergenos img{
+  margin-left: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .carousel {
   position: relative;
@@ -511,5 +516,14 @@ h4 {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel-slide img {
+    /* Estilos específicos para dispositivos móviles */
+    width: 100%;
+    height: auto;
+    margin-right: 5px; /* Espacio entre las imágenes */
   }
 }
